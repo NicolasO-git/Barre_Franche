@@ -1,4 +1,5 @@
 # Barre_Franche
+[![Generic badge](https://img.shields.io/badge/Release-v1.0-<COLOR>.svg)](https://github.com/Plala31/Barre_Franche.git/releases) 
 
 <p align="center">
   <img src="http://societedesauvetage.org/wp-content/uploads/2017/01/Voilier900X600.jpg" width="450px" height="300px"/></p>
