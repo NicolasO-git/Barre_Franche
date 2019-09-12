@@ -1,4 +1,8 @@
 # Barre_Franche
+
+<p align="center">
+  <img src="http://societedesauvetage.org/wp-content/uploads/2017/01/Voilier900X600.jpg" width="548px" height="296px"/></p>
+
 ## Présentation du projet
 
 Lors de la deuxième année de master EEA SME il est demandé aux étudiants de réaliser, en binôme, un projet en condition de bureau d'étude pour mettre en oeuvre une solution matérielle/logicielle répondant aux besoins de contrôle et de gestion de la trajectoire d'une barre franche de voilier.
@@ -15,7 +19,7 @@ Le projet sera décrit en plusieurs entités composées de plusieurs blocs repr�
 ## Functionnal Diagram
 
 <p align="center">
-  <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="548px" height="296px"/></p>
+  <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="450px" height="300px"/></p>
 
 ## Hardware
 
