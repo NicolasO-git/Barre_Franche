@@ -22,7 +22,7 @@ Le projet sera décrit en plusieurs entités composées de plusieurs blocs repr�
 +   DE0 NANO Altera (EP4CE22F17C6N)
 
 <p align="center">
-  <img src="https://market.samm.com/de0-nano-en-fpga-terasic-1501-59-B.png" width="500px" height="400px"/></p>
+  <img src="https://market.samm.com/de0-nano-en-fpga-terasic-1501-59-B.png" width="500px" height="350px"/></p>
 
 ## Softwares
 
