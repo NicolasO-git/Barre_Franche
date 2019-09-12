@@ -1,11 +1,11 @@
 ## Barre_Franche
 # Présentation du projet
 
-Lors de la deuxième année de master EEA SME il est demandé aux étudiants de réaliser, en binôme, un projet en condition de bureau d'étude pour mettre en oeuvre une solution matérielle/logicielle répondant aux besoin de contrôle et gestion de la trajectoire d'une barre franche de voilier.
+Lors de la deuxième année de master EEA SME il est demandé aux étudiants de réaliser, en binôme, un projet en condition de bureau d'étude pour mettre en oeuvre une solution matérielle/logicielle répondant aux besoins de contrôle et de gestion de la trajectoire d'une barre franche de voilier.
 
-Il sera nécessaire d'analyser le contexte ainsi que les différentes besoins pour réaliser les différentes interfaces du projet. Cette solution devra être embarquée sur un système à puce programmable d'Altera (Carte DE0 NANO).
+Il sera nécessaire d'analyser le contexte ainsi que les différents besoins pour réaliser toutes les interfaces du projet. Cette solution devra être embarquée sur un système à puce programmable d'Altera (Carte à base de FPGA DE0 NANO).
 
-Le projet sera décrit en plusieurs entités composées de plusieurs blocs représentant chacun une fonction du projet. Le projet devra intégrer une partie matérielle (acquisitions, commandes...) et une partie logicielle sur un processeur pour le contrôle de la trajectoire.
+Le projet sera décrit en plusieurs entités composées de plusieurs blocs représentant chacun une fonction du projet. Le projet devra intégrer une partie matérielle (acquisitions, commandes, ...) et une partie logicielle sur un processeur pour le contrôle de la trajectoire.
 
 ## Languages used/specifications
 
