@@ -1,5 +1,5 @@
-## Barre_Franche
-# Présentation du projet
+# Barre_Franche
+## Présentation du projet
 
 Lors de la deuxième année de master EEA SME il est demandé aux étudiants de réaliser, en binôme, un projet en condition de bureau d'étude pour mettre en oeuvre une solution matérielle/logicielle répondant aux besoins de contrôle et de gestion de la trajectoire d'une barre franche de voilier.
 
