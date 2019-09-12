@@ -14,6 +14,9 @@ Le projet sera décrit en plusieurs entités composées de plusieurs blocs repr�
 
 ## Functionnal Diagram
 
+<p align="center">
+  <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="548px" height="296px"/></p>
+
 ## Hardware
 
 +   DE0 NANO Altera (EP4CE22F17C6N)
