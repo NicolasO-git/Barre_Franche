@@ -1,7 +1,7 @@
 # Barre_Franche
 
 <p align="center">
-  <img src="http://societedesauvetage.org/wp-content/uploads/2017/01/Voilier900X600.jpg" width="548px" height="296px"/></p>
+  <img src="http://societedesauvetage.org/wp-content/uploads/2017/01/Voilier900X600.jpg" width="450px" height="300px"/></p>
 
 ## Présentation du projet
 
@@ -19,7 +19,7 @@ Le projet sera décrit en plusieurs entités composées de plusieurs blocs repr�
 ## Functionnal Diagram
 
 <p align="center">
-  <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="400px" height="300px"/></p>
+  <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="548px" height="296px"/></p>
 
 ## Hardware
 
