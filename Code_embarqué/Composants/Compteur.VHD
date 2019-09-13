@@ -1,33 +1,37 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
 
 entity Compteur is
     generic 
     (
-        NCpt :  integer :=  250;
-    )
+        N       :   integer := 8
+    );
     port 
     (
+        ARst_N  :   in  std_logic;
         Clk     :   in  std_logic;
-        Clk_in  :   in  std_logic;
-        Clk_out :   out std_logic_vector(7 downto 0)
+        SRst    :   in  std_logic;
+        En      :   in  std_logic;
+        Q       :   out std_logic_vector(N - 1 downto 0)
     );
 end entity Compteur;
 
 architecture rtl of Compteur is
-    signal S_Clk_out    :   std_logic_vector(7 downto 0);
+    signal iQ   :   std_logic_vector(N - 1 downto 0);
 begin
-    cpt: process(sensitivity_list)
+    pCpt: process(Clk, ARst_N)
     begin
-        if Clk'event and Clk = '1' then
-            if Clk_in = '1' then
-                if S_Clk_out >= NCpt    then
-                    S_Clk_out   <= "0000000";
-                else
-                    S_Clk_out   <= S_Clk_out + 1;
-                end if
-            end if
-        end if
-    end process cpt;
+    if ARst_N = '1' then
+        iQ <= (others => '0');
+    elsif rising_edge(Clk) then
+        if SRst = '1' then
+            iQ <= (others => '0');
+        elsif En = '1' then
+            iQ <= iQ + '1';
+        end if;
+    end if;
+    end process pCpt;
+    Q <= iQ;
 end architecture rtl;
