@@ -33,5 +33,5 @@ begin
         end if;
     end if;
     end process pCpt;
-    Q <= iQ;
+Q <= iQ;
 end architecture rtl;
