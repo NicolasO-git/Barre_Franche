@@ -18,7 +18,8 @@ Le projet sera décrit en plusieurs entités composées de plusieurs blocs repr�
 +   C/C++
 
 ## Functionnal Diagram
-
+Une vue globale du système par un diagramme fonctionnel du projet avec toutes ses fonctions, elles seront détaillées dans chaque dossiers du projet par un fichier README.md permettant de décomponser toutes les sous fonctions de chaque fonctions pour ainsi mieux les comprendres avant une implémentation logicielle.
+  
 <p align="center">
   <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="548px" height="296px"/></p>
 
