@@ -11,3 +11,6 @@ Cette fonction utilise deux dispositif électronique :
 ## Une girouette qui nous permettra de capter la direction du vent.
 <p align="center">
   <img src="https://i.ebayimg.com/images/g/PoEAAOSwm4Na~Nht/s-l300.jpg" width="300px" height="300px"/></p>
+
+* Singal de sortie  :   sortie analogique [0 à 1 Volt].
+* Plage             :   mesure un angle [0 à 360 degré].
