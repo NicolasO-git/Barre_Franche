@@ -25,8 +25,26 @@ Cette fonction utilise deux dispositif électronique :
 
 Lesquelles auront en entrées "Position voilier" ainsi que "Vent" et donneront en sorties "Direction_vent" et "Force_vent".
 
-## La première sous fonction (F1.1) sera divisée en trois parties :
+## Capatage direction vent (F1.1) sera divisée en trois parties :
 
 + Un diviseur de fréquence nous permettant d'obtenir une horloge de 1 Hz pour effectuer une mesure toutes les secondes.
 + Un compteur pour récupérer la valeur allant de [0 à 250 Hz].
 + Un registre, composée d'une simple basule D, pour mémoriser la valeur et la transmettre par la suite.
+
+## Conversion / Adaptation (F1.2) sera divisée en  parties :
+
++ .
++ .
++ .
+
+## Capatage force vent (F1.3) sera divisée en  parties :
+
++ .
++ .
++ .
+
+## Conversion / Adaptation (F1.4) sera divisée en  parties :
+
++ .
++ .
++ .
