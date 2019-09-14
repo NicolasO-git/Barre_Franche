@@ -17,7 +17,7 @@ Cette fonction utilise deux dispositif électronique :
 
 # Exploration architecturale
 
-Cette fonction sera divisée en 4 sous fonctions :
+## Cette fonction sera divisée en 4 sous fonctions :
 + Captage direction vent (F1.1).
 + Conversion / Adaptation (F1.2).
 + Captage force vent (F1.3).
@@ -25,7 +25,7 @@ Cette fonction sera divisée en 4 sous fonctions :
 
 Lesquelles auront en entrées "Position voilier" ainsi que "Vent" et donneront en sorties "Direction_vent" et "Force_vent".
 
-La première sous fonction (F1.1) sera divisée en trois parties :
+## La première sous fonction (F1.1) sera divisée en trois parties :
 
 + Un diviseur de fréquence nous permettant d'obtenir une horloge de 1 Hz pour effectuer une mesure toutes les secondes.
 + Un compteur pour récupérer la valeur allant de [0 à 250 Hz].
