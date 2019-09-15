@@ -8,4 +8,5 @@
 *.sof
 db/
 incremental_db/
-src/*.bak
+*.bak
+*.old
