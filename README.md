@@ -12,20 +12,20 @@ Il sera nécessaire d'analyser le contexte ainsi que les différents besoins pou
 
 Le projet sera décrit en plusieurs entités composées de plusieurs blocs représentant chacun une fonction du projet. Le projet devra intégrer une partie matérielle (acquisitions, commandes, ...) et une partie logicielle sur un processeur pour le contrôle de la trajectoire.
 
-## Languages used/specifications
+## Langages utilisés/ Spécifications
 
 Les différents langages de programmation utilisés durant le projet :
 
 +   VHDL
 +   C/C++
 
-## Functionnal Diagram
+## Diagramme Fonctionnem
 Une vue globale du système par un diagramme fonctionnel du projet avec toutes ses fonctions, elles seront détaillées dans chaque dossiers du projet "Code_embarqué" par un fichier README.md permettant de décomponser toutes les sous fonctions de chaque fonctions pour ainsi mieux les comprendres avant une implémentation logicielle.
 
 <p align="center">
   <img src="https://image.noelshack.com/fichiers/2019/37/4/1568325538-bloc.png" width="548px" height="296px"/></p>
 
-## Hardware
+## Matériels
 
 La partie matérielle utilisées à la réalisation du projet :
 
@@ -34,7 +34,7 @@ La partie matérielle utilisées à la réalisation du projet :
 <p align="center">
   <img src="https://market.samm.com/de0-nano-en-fpga-terasic-1501-59-B.png" width="450px" height="400px"/></p>
 
-## Softwares
+## Logiciels
 
 Les différents logiciels utilisés au bon déroulement du projet : 
 
