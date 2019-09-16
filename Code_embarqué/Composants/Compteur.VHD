@@ -23,7 +23,7 @@ architecture rtl of Compteur is
 begin
     pCpt: process(Clk, ARst_N)
     begin
-    if ARst_N = '1' then
+    if ARst_N = '0' then
         iQ <= (others => '0');
     elsif rising_edge(Clk) then
         if SRst = '1' then
