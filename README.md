@@ -12,7 +12,7 @@ Il sera nécessaire d'analyser le contexte ainsi que les différents besoins pou
 
 Le projet sera décrit en plusieurs entités composées de plusieurs blocs représentant chacun une fonction du projet. Le projet devra intégrer une partie matérielle (acquisitions, commandes, ...) et une partie logicielle sur un processeur pour le contrôle de la trajectoire.
 
-## Langages utilisés/ Spécifications
+## Langages utilisés / Spécifications
 
 Les différents langages de programmation utilisés durant le projet :
 
