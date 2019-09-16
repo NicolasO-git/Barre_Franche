@@ -31,20 +31,20 @@ port map
 Cpt_anemo   :   entity  work.Cpt
 port map
     (
-        Clk_50M =>  Clk_50M,
- 	    Clk_1   =>  Clk_1Hz,
- 	    In_freq_anemometre				: in std_logic;
- 	    Raz_n							: in std_logic;
- 	    Output							: out std_logic_vector(7 downto 0)
+        Clk_50M             =>  Clk_50M,
+        Clk_1               =>  Clk_1Hz,    
+        In_freq_anemometre  =>  ,
+        Raz_n               =>  Raz_n,
+        Output              =>
  	 );    
 
 Detect_front    :   entity  work.Detect_FM
 port map
     (
-        Clk_50M                         : in std_logic;
- 	    Clk_1      						: in std_logic;
- 	    In_freq_anemometre				: in std_logic;
- 	    Raz_n							: in std_logic;
- 	    Output							: out std_logic_vector(7 downto 0)
+        Clk_50M             =>  Clk_50M,
+        Clk_1               =>  Clk_1Hz,
+ 	    In_freq_anemometre	=>  ,
+        Raz_n               =>  Raz_n,
+ 	    Output				=>
     );
 end architecture rtl;
