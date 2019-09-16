@@ -24,6 +24,7 @@ begin
     elsif rising_edge(clk) then
         Q   <=  D;
         Q_N <=  not D;
+        --coucou
     end if;
     end process Bascule;
 end architecture rtl;
