@@ -6,7 +6,7 @@ entity Detect_FM is
     port 
     (
         Clk_50M                     : in  std_logic;
-        Raz_n                       : in  std_logic;
+        ARaz_n                      : in  std_logic;
         In_freq_anemometre          : in  std_logic;
         In_freq_anemometre_M        : out std_logic
     );
@@ -19,9 +19,9 @@ signal r0_input                           : std_logic;
 signal r1_input                           : std_logic;
 
 begin
-    p_rising_edge_detector : process(Clk_50M,Raz_n)
+    p_rising_edge_detector : process(Clk_50M,ARaz_n)
     begin
-        if(Raz_n = '0') then
+        if(ARaz_n = '0') then
             r0_input           <= '0';
             r1_input           <= '0';
         elsif(rising_edge(Clk_50M)) then

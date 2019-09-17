@@ -6,8 +6,8 @@ entity Reg is
     port 
     (
         Clk     :   in  std_logic;
-        ARst_N  :   in  std_logic;
-        D       :   in  std_logic_vector(7  downto  0);
+        ARaz_n  :   in  std_logic;
+        D       :   in  std_logic_vector(7	downto	0);
         Q       :   out std_logic_vector(7  downto  0)    
     );
 end entity Reg;
@@ -17,12 +17,14 @@ architecture rtl of Reg is
 begin
     
     fReg    :   for i   in  0   to  7   generate
-        Reg :   entity  work.Bascule_D
+        BasculeD :   entity  work.Bascule_D
+		port map
         (
-            ARst_N  =>  ARst_N,
             Clk     =>  Clk,
+            ARaz_n  =>  ARaz_n,
             D       =>  D(i),
-            Q       =>  Q(i)
+            Q       =>  Q(i),
+            Q_N		=> 	open
         );
     end generate fReg;
 
