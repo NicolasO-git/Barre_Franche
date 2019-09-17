@@ -6,12 +6,12 @@ entity Force_vent is
     port 
     (
         Clk_50M             :   in  std_logic;
-        In_freq_anemometre  :   in  std_logic;
-        Raz_n               :   in  std_logic;
+        In_freq_anemometre  :   in  std_logic_vector(7  downto  0);
+        ARaz_n              :   in  std_logic;
         Continu             :   in  std_logic;
         Start_Stop          :   in  std_logic;
         Data_valid          :   out std_logic;
-        Data_anemometre     :   out std_logic        
+        Data_anemometre     :   out std_logic_vector(7  downto  0)        
     );
 end entity Force_vent;
 
@@ -54,6 +54,9 @@ port map
 Register    :   entity  work.Reg
 port map 
     (
-        
-    )
+        Clk     =>  Clk_1Hz,
+        ARaz_n  =>  ARaz_n,
+        D       =>  Freq_anemo_M_CPT,
+        Q       =>  Data_anemometre
+    );
 end architecture rtl;
