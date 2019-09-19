@@ -20,14 +20,14 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 152 112)
-	(text "Div" (rect 5 0 22 12)(font "Arial" ))
+	(rect 16 16 144 112)
+	(text "Reg" (rect 5 0 25 12)(font "Arial" ))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "Clk_50M" (rect 0 0 42 12)(font "Arial" ))
-		(text "Clk_50M" (rect 21 27 63 39)(font "Arial" ))
+		(text "Clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clk" (rect 21 27 37 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
@@ -38,13 +38,20 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 136 32)
+		(pt 0 64)
+		(input)
+		(text "D[7..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "D[7..0]" (rect 21 59 55 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 128 32)
 		(output)
-		(text "Clk_1Hz" (rect 0 0 41 12)(font "Arial" ))
-		(text "Clk_1Hz" (rect 74 27 115 39)(font "Arial" ))
-		(line (pt 136 32)(pt 120 32)(line_width 1))
+		(text "Q[7..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "Q[7..0]" (rect 73 27 107 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 120 80)(line_width 1))
+		(rectangle (rect 16 16 112 80)(line_width 1))
 	)
 )

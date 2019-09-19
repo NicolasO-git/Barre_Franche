@@ -20,31 +20,30 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 152 112)
-	(text "Div" (rect 5 0 22 12)(font "Arial" ))
+	(rect 16 16 144 112)
+	(text "Deco7Seg" (rect 5 0 55 12)(font "Arial" ))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "Clk_50M" (rect 0 0 42 12)(font "Arial" ))
-		(text "Clk_50M" (rect 21 27 63 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
+		(text "E[3..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "E[3..0]" (rect 21 27 54 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "ARaz_n" (rect 0 0 37 12)(font "Arial" ))
-		(text "ARaz_n" (rect 21 43 58 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 136 32)
+		(pt 128 32)
 		(output)
-		(text "Clk_1Hz" (rect 0 0 41 12)(font "Arial" ))
-		(text "Clk_1Hz" (rect 74 27 115 39)(font "Arial" ))
-		(line (pt 136 32)(pt 120 32)(line_width 1))
+		(text "Seg[6..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "Seg[6..0]" (rect 63 27 107 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
+	(parameter
+		"CommonCathode"
+		"false"
+		""
+		(type "PARAMETER_ENUM")	)
 	(drawing
-		(rectangle (rect 16 16 120 80)(line_width 1))
+		(rectangle (rect 16 16 112 80)(line_width 1))
 	)
+	(annotation_block (parameter)(rect 144 -64 244 16))
 )

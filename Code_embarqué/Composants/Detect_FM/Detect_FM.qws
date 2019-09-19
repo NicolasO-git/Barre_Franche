@@ -5,6 +5,10 @@ ptn_Child1=ChildFrames
 [ProjectWorkspace.Frames.ChildFrames]
 ptn_Child1=Document-0
 ptn_Child2=Document-1
+<<<<<<< HEAD
+=======
+ptn_Child3=Document-2
+>>>>>>> 6228518063773980c601aa8c32dc1badc26bf1b5
 [ProjectWorkspace.Frames.ChildFrames.Document-0]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
@@ -15,6 +19,7 @@ IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0.StateMap]
 AFC_IN_REPORT=False
+<<<<<<< HEAD
 [ProjectWorkspace.Frames.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0]
@@ -27,3 +32,5 @@ ptn_Child1=StateMap
 AFC_SIM_AP_NAME=Detect_FM
 AFC_PROJ_DB_PATH=C:/Users/nico/Desktop/Barre_Franche/Code_embarqué/Composants/Detect_FM/db/Detect_FM.quartus_db
 AFC_IN_REPORT=False
+=======
+>>>>>>> 6228518063773980c601aa8c32dc1badc26bf1b5
