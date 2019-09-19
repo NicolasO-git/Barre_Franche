@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("In_freq_anemometre")
+SIGNAL("50Mh")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -40,96 +40,6 @@ SIGNAL("In_freq_anemometre")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "";
-}
-
-SIGNAL("Output")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("Output[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
-}
-
-SIGNAL("Output[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Output";
 }
 
 SIGNAL("ARaz_n")
@@ -142,7 +52,7 @@ SIGNAL("ARaz_n")
 	PARENT = "";
 }
 
-SIGNAL("Clk_1Hz")
+SIGNAL("Signal")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -152,129 +62,107 @@ SIGNAL("Clk_1Hz")
 	PARENT = "";
 }
 
-SIGNAL("Clk_50M")
+SIGNAL("capteur")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("capteur[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
 }
 
-TRANSITION_LIST("In_freq_anemometre")
+SIGNAL("capteur[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+SIGNAL("capteur[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+SIGNAL("capteur[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+SIGNAL("capteur[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+SIGNAL("capteur[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+SIGNAL("capteur[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+SIGNAL("capteur[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "capteur";
+}
+
+TRANSITION_LIST("50Mh")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 50;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
 		}
-	}
-}
-
-TRANSITION_LIST("Output[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Output[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Output[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Output[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Output[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 430.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 430.0;
-	}
-}
-
-TRANSITION_LIST("Output[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 230.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 500.0;
-		LEVEL 1 FOR 70.0;
-	}
-}
-
-TRANSITION_LIST("Output[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 130.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 100.0;
-			LEVEL 0 FOR 100.0;
-		}
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 260.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 70.0;
-	}
-}
-
-TRANSITION_LIST("Output[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 1 FOR 40.0;
-			LEVEL 0 FOR 60.0;
-		}
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 260.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 40.0;
-			LEVEL 0 FOR 60.0;
-		}
-		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -288,28 +176,89 @@ TRANSITION_LIST("ARaz_n")
 	}
 }
 
-TRANSITION_LIST("Clk_1Hz")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 560.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 420.0;
-	}
-}
-
-TRANSITION_LIST("Clk_50M")
+TRANSITION_LIST("Signal")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 20;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
+	}
+}
+
+TRANSITION_LIST("capteur[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("capteur[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -324,7 +273,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Clk_50M";
+	CHANNEL = "50Mh";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = ASCII;
 	TREE_INDEX = 1;
@@ -333,7 +282,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "In_freq_anemometre";
+	CHANNEL = "Signal";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = ASCII;
 	TREE_INDEX = 2;
@@ -342,9 +291,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	CHANNEL = "capteur";
+	EXPAND_STATUS = EXPANDED;
+	RADIX = ASCII;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 	CHILDREN = 4, 5, 6, 7, 8, 9, 10, 11;
@@ -352,9 +301,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[7]";
+	CHANNEL = "capteur[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -362,9 +311,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[6]";
+	CHANNEL = "capteur[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -372,9 +321,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[5]";
+	CHANNEL = "capteur[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -382,9 +331,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[4]";
+	CHANNEL = "capteur[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -392,9 +341,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[3]";
+	CHANNEL = "capteur[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -402,9 +351,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[2]";
+	CHANNEL = "capteur[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -412,9 +361,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[1]";
+	CHANNEL = "capteur[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -422,26 +371,17 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Output[0]";
+	CHANNEL = "capteur[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = ASCII;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
 	PARENT = 3;
 }
 
-DISPLAY_LINE
-{
-	CHANNEL = "Clk_1Hz";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = ASCII;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 0;
-}
-
 TIME_BAR
 {
-	TIME = 26225;
+	TIME = 16725;
 	MASTER = TRUE;
 }
 ;

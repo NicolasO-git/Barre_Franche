@@ -5,10 +5,10 @@ use IEEE.numeric_std.all;
 entity Reg is
     port 
     (
-        Clk     :   in  std_logic;
-        ARaz_n  :   in  std_logic;
-        D       :   in  std_logic_vector(7	downto	0);
-        Q       :   out std_logic_vector(7  downto  0)    
+        Clk     	:   in  std_logic;
+        ARaz_n  	:   in  std_logic;
+        D       	:   in  std_logic_vector(7	downto	0);
+        Q       	:   out std_logic_vector(7  downto  0)   
     );
 end entity Reg;
 
@@ -20,12 +20,12 @@ begin
         BasculeD :   entity  work.Bascule_D
 		port map
         (
-            Clk     =>  Clk,
-            ARaz_n  =>  ARaz_n,
-            D       =>  D(i),
-            Q       =>  Q(i),
-            Q_N		=> 	open
+            Clk     	=>  Clk,
+            ARaz_n  	=>  ARaz_n,
+            D       	=>  D(i),
+            Q       	=>  Q(i),
+            Q_N			=> 	open
         );
     end generate fReg;
-
+	
 end architecture rtl;

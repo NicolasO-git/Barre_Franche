@@ -23,17 +23,17 @@ architecture moncompteur of Cpt is
 
 begin
 
-        process(Clk_1Hz,In_freq_anemometre,ARaz_n) 
+        process(Clk_50M,In_freq_anemometre,ARaz_n) 
         begin
     
-		    if ARaz_n    =	'1' then
+		    if ARaz_n    =	'0' then
                 Temp    <=  "00000000";
 
-		    elsif(Clk_1Hz'event and Clk_1Hz = '1') then
-                if	(In_freq_anemometre = '1') then
+		    elsif(Clk_50M'event and Clk_50M = '1') then
+				if	Clk_1Hz	=	'1'	then
+					Temp	<=	(others => '0');
+                elsif	(In_freq_anemometre = '1') then
 				    Temp    <=  Temp + 1;
-                elsif Temp  >   "11111111" then
-                    Temp    <=  "00000000";
 			    end if;
 		    end if;
 		
