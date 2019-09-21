@@ -326,44 +326,12 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 208 160)
-	(pt 208 144)
-)
-(connector
-	(pt 208 176)
-	(pt 144 176)
-)
-(connector
-	(pt 208 216)
-	(pt 696 216)
-)
-(connector
-	(pt 208 160)
-	(pt 208 176)
-)
-(connector
-	(pt 208 176)
-	(pt 208 216)
-)
-(connector
-	(pt 216 160)
-	(pt 216 264)
-)
-(connector
 	(pt 944 320)
 	(pt 680 320)
 )
 (connector
 	(pt 680 264)
 	(pt 680 320)
-)
-(connector
-	(pt 216 264)
-	(pt 680 264)
-)
-(connector
-	(pt 680 264)
-	(pt 696 264)
 )
 (connector
 	(pt 144 160)
@@ -376,14 +344,6 @@ applicable agreement for further details.
 (connector
 	(pt 144 56)
 	(pt 208 56)
-)
-(connector
-	(pt 144 160)
-	(pt 208 160)
-)
-(connector
-	(pt 208 160)
-	(pt 216 160)
 )
 (connector
 	(pt 208 144)
@@ -482,10 +442,45 @@ applicable agreement for further details.
 	(pt 1208 264)
 	(pt 1152 264)
 )
-(junction (pt 208 176))
-(junction (pt 208 160))
-(junction (pt 208 144))
+(connector
+	(pt 696 216)
+	(pt 176 216)
+)
+(connector
+	(pt 176 176)
+	(pt 176 216)
+)
+(connector
+	(pt 144 176)
+	(pt 176 176)
+)
+(connector
+	(pt 176 176)
+	(pt 208 176)
+)
+(connector
+	(pt 192 160)
+	(pt 192 264)
+)
+(connector
+	(pt 192 264)
+	(pt 680 264)
+)
+(connector
+	(pt 680 264)
+	(pt 696 264)
+)
+(connector
+	(pt 144 160)
+	(pt 192 160)
+)
+(connector
+	(pt 192 160)
+	(pt 208 160)
+)
 (junction (pt 680 264))
 (junction (pt 144 56))
 (junction (pt 160 40))
 (junction (pt 512 40))
+(junction (pt 176 176))
+(junction (pt 192 160))

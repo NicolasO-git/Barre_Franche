@@ -8,6 +8,7 @@ entity Reg is
         Clk     	:   in  std_logic;
         ARaz_n  	:   in  std_logic;
         D       	:   in  std_logic_vector(7	downto	0);
+        Data_valid  :   out std_logic;
         Q       	:   out std_logic_vector(7  downto  0)   
     );
 end entity Reg;
@@ -27,5 +28,13 @@ begin
             Q_N			=> 	open
         );
     end generate fReg;
-	--cc
+	
+    process(Clk, ARaz_n)
+        begin
+        if ARaz_n   =   '0' then
+            Data_valid  <=  '0';
+        elsif rising_edge(Clk) then
+            Data_valid  <=  '1';
+        end if;
+    end process; 
 end architecture rtl;
