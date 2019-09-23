@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 160 112)
+	(rect 16 16 144 112)
 	(text "Reg" (rect 5 0 25 12)(font "Arial" ))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -45,20 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 144 32)
+		(pt 128 32)
 		(output)
 		(text "Q[7..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "Q[7..0]" (rect 89 27 123 39)(font "Arial" ))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
-	)
-	(port
-		(pt 144 48)
-		(output)
-		(text "Data_valid" (rect 0 0 53 12)(font "Arial" ))
-		(text "Data_valid" (rect 70 43 123 55)(font "Arial" ))
-		(line (pt 144 48)(pt 128 48)(line_width 1))
+		(text "Q[7..0]" (rect 73 27 107 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 128 80)(line_width 1))
+		(rectangle (rect 16 16 112 80)(line_width 1))
 	)
 )
