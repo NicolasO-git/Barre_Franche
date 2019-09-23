@@ -20,7 +20,7 @@ architecture rtl of MEF is
 	SIGNAL State : State_Type;    -- Create a signal that uses 
 
 begin
-	
+	--t
     process(Clk, ARaz_n)
         begin
 			if Araz_n	=	'0' then 
