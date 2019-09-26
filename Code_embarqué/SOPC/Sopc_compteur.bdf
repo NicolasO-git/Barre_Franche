@@ -1,0 +1,152 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 72 160 240 176)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "BP[1..0]" (rect 5 0 46 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 24 176 72 192))
+)
+(pin
+	(input)
+	(rect 72 112 240 128)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Clk_50M" (rect 5 0 48 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 16 128 72 144))
+)
+(pin
+	(output)
+	(rect 680 192 856 208)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Leds[7..0]" (rect 90 0 139 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 856 208 912 224))
+)
+(symbol
+	(rect 280 88 632 232)
+	(text "config_sopc" (rect 4 0 85 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 4 128 21 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_0 " (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "clk_0 " (rect 20 25 53 39)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset_n " (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "reset_n " (rect 20 41 67 55)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "in_port_to_the_Boutons[1..0] " (rect 0 0 167 14)(font "Arial" (font_size 8)))
+		(text "in_port_to_the_Boutons[1..0] " (rect 20 73 187 87)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 352 112)
+		(output)
+		(text "out_port_from_the_Leds[7..0] " (rect 0 0 172 14)(font "Arial" (font_size 8)))
+		(text "out_port_from_the_Leds[7..0] " (rect 183 105 355 119)(font "Arial" (font_size 8)))
+		(line (pt 336 112)(pt 352 112)(line_width 3))
+	)
+	(drawing
+		(line (pt 16 64)(pt 335 64)(color 0 0 0)(dotted))
+		(line (pt 16 96)(pt 335 96)(color 0 0 0)(dotted))
+		(rectangle (rect 16 16 336 128))
+	)
+)
+(symbol
+	(rect 184 128 200 160)
+	(text "VCC" (rect 0 7 10 27)(font "Arial" (font_size 6))(vertical))
+	(text "inst6" (rect 5 3 17 26)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 7 19 19 24)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 16)(pt 8 16))
+	)
+	(drawing
+		(line (pt 8 8)(pt 8 24))
+	)
+	(flipy_rotate90)
+)
+(connector
+	(pt 680 200)
+	(pt 632 200)
+	(bus)
+)
+(connector
+	(pt 280 168)
+	(pt 240 168)
+	(bus)
+)
+(connector
+	(pt 240 120)
+	(pt 280 120)
+)
+(connector
+	(pt 280 136)
+	(pt 224 136)
+)
+(connector
+	(pt 200 144)
+	(pt 224 144)
+)
+(connector
+	(pt 224 144)
+	(pt 224 136)
+)
