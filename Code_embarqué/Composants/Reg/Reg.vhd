@@ -19,7 +19,7 @@ begin
     
     fReg    :   for i   in  0   to  7   generate
         BasculeD :   entity  work.Bascule_D
-		port map
+        port map
         (
             Clk     	=>  Clk,
             ARaz_n  	=>  ARaz_n,
