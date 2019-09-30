@@ -1,0 +1,80 @@
+Altera SOPC Builder Version 11.01 Build 208
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2019.09.30 14:53:02 (*) mk_custom_sdk starting
+# 2019.09.30 14:53:02 (*) Reading project C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/mon_sopc_pwm.ptf.
+
+# 2019.09.30 14:53:02 (*) Finding all CPUs
+# 2019.09.30 14:53:02 (*) Finding all available components
+# 2019.09.30 14:53:02 (*) Reading C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/.sopc_builder/install.ptf
+
+# 2019.09.30 14:53:02 (*) Found 63 components
+
+# 2019.09.30 14:53:03 (*) Finding all peripherals
+
+# 2019.09.30 14:53:03 (*) Finding software components
+
+# 2019.09.30 14:53:03 (*) (Legacy SDK Generation Skipped)
+# 2019.09.30 14:53:03 (*) (All TCL Script Generation Skipped)
+# 2019.09.30 14:53:03 (*) (No Libraries Built)
+# 2019.09.30 14:53:03 (*) (Contents Generation Skipped)
+# 2019.09.30 14:53:03 (*) mk_custom_sdk finishing
+# 2019.09.30 14:53:03 (*) Starting generation for system: mon_sopc_pwm.
+
+.
+.
+..
+.
+.
+
+# 2019.09.30 14:53:03 (*) Running Generator Program for cpu_0
+
+# 2019.09.30 14:53:04 (*) Starting Nios II generation
+# 2019.09.30 14:53:04 (*)   Checking for plaintext license.
+# 2019.09.30 14:53:05 (*)   Couldn't query license setup in Quartus directory f:/quartus11/quartus
+# 2019.09.30 14:53:05 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2019.09.30 14:53:05 (*)   LM_LICENSE_FILE environment variable is empty
+# 2019.09.30 14:53:05 (*)   Plaintext license not found.
+# 2019.09.30 14:53:05 (*)   No license required to generate encrypted Nios II/e.
+
+# 2019.09.30 14:53:05 (*)   Getting CPU configuration settings
+# 2019.09.30 14:53:05 (*)   Elaborating CPU configuration settings
+# 2019.09.30 14:53:05 (*)   Creating all objects for CPU
+# 2019.09.30 14:53:06 (*)   Generating HDL from CPU objects
+# 2019.09.30 14:53:06 (*)   Creating plain-text HDL
+# 2019.09.30 14:53:09 (*) Done Nios II generation
+
+# 2019.09.30 14:53:09 (*) Running Generator Program for Inputs
+
+# 2019.09.30 14:53:10 (*) Running Generator Program for Outputs
+
+# 2019.09.30 14:53:10 (*) Running Generator Program for sysid
+
+# 2019.09.30 14:53:11 (*) Running Generator Program for jtag_uart_0
+
+# 2019.09.30 14:53:12 (*) Running Generator Program for onchip_memory2_0
+
+
+# 2019.09.30 14:53:12 (*) Making arbitration and system (top) modules.
+
+# 2019.09.30 14:53:15 (*) Generating Quartus symbol for top level: mon_sopc_pwm
+# 2019.09.30 14:53:15 (*) Generating Symbol C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/mon_sopc_pwm.bsf
+
+# 2019.09.30 14:53:15 (*) Creating command-line system-generation script: C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/mon_sopc_pwm_generation_script
+
+# 2019.09.30 14:53:15 (*) Running setup for HDL simulator: modelsim
+
+
+00
+# 2019.09.30 14:53:15 (*) Completed generation for system: mon_sopc_pwm.
+# 2019.09.30 14:53:15 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/mon_sopc_pwm.ptf 
+  System HDL Model : C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/mon_sopc_pwm.vhd 
+  System Generation Script : C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/SOPC_PWM/Mcu_fpga/mon_sopc_pwm_generation_script 
+
+# 2019.09.30 14:53:15 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.
