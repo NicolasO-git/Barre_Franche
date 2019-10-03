@@ -1,8 +1,0 @@
-
-**** Build of configuration Nios II for project Test_leds_2 ****
-
-make all 
-Info: Building ../Test_leds_2_bsp/
-make --no-print-directory -C ../Test_leds_2_bsp/
-[BSP build complete]
-[Test_leds_2 build complete]
