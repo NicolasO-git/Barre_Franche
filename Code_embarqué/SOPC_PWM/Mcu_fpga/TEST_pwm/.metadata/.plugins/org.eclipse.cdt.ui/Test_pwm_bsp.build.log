@@ -1,5 +1,0 @@
-
-**** Clean-only build of configuration Nios II for project Test_pwm_bsp ****
-
-make clean 
-[BSP clean complete]
