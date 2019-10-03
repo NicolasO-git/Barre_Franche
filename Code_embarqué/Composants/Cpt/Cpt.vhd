@@ -7,14 +7,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity Cpt is
    PORT
 	(   
-        Clk_50M                         : in std_logic;
- 	    Clk_1Hz    						: in std_logic;
- 	    In_freq_anemometre				: in std_logic;
- 	    ARaz_n							: in std_logic;
- 	    R								: in std_logic;
- 	    Start_stop						: in std_logic;
- 	    Output							: out std_logic_vector(7 downto 0);
- 	    Data_Valid						: out std_logic
+       Clk_50M					: in std_logic;
+ 	    Clk_1Hz    			: in std_logic;
+ 	    In_freq_anemometre	: in std_logic;
+ 	    ARaz_n					: in std_logic;
+ 	    R							: in std_logic;
+ 	    Start_stop				: in std_logic;
+ 	    Output					: out std_logic_vector(7 downto 0);
+ 	    Data_Valid				: out std_logic
  	 );
  	 
 end Cpt;
