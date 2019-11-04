@@ -85,6 +85,7 @@
 
 #define freq (unsigned int*)PWM_AVALON_0_BASE
 #define duty (unsigned int*)(PWM_AVALON_0_BASE + 4)
+#define vent (unsigned int*)PWM_AVALON_0_BASE
 
 int main()
 { 
@@ -96,12 +97,15 @@ int main()
   {
 	  *freq	=	0x30D40;	//divise la freq
 	  *duty	=	0x186A0;
+	  printf("La vitesse du vent est de : %d km/h. \n", *vent);
 	  usleep(2000000);
 	  *freq	=	0x61A80;
 	  *duty	=	0x30D40;
+	  printf("La vitesse du vent est de : %d km/h. \n", *vent);
 	  usleep(2000000);
 	  *freq	=	0x30D40;	//divise la freq
 	  *duty	=	0x186A0;
+	  printf("La vitesse du vent est de : %d km/h. \n", *vent);
 	  usleep(2000000);
   }
 
