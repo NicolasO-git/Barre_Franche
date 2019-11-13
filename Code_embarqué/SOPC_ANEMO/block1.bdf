@@ -1,0 +1,130 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 216 160 384 176)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Clk_50MHz" (rect 5 0 61 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 216 200 384 216)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Vent" (rect 5 0 28 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 216 240 384 256)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Raz" (rect 5 0 23 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(symbol
+	(rect 440 96 840 280)
+	(text "unsaved" (rect 177 -1 232 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 41 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 160 72))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "entree_anemo_vitesse_vent" (rect 0 0 161 14)(font "Arial" (font_size 8)))
+		(text "entree_anemo_vitesse_vent" (rect 4 101 165 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 160 112))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 141 84 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 160 152))
+	)
+	(drawing
+		(text "clk" (rect 145 43 162 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 165 67 179 79)(font "Arial" (color 0 0 0)))
+		(text "entree_anemo" (rect 77 83 172 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "vitesse_vent" (rect 165 107 229 119)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 131 123 164 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 165 147 201 159)(font "Arial" (color 0 0 0)))
+		(text " unsaved " (rect 361 168 410 180)(font "Arial" ))
+		(line (pt 160 32)(pt 240 32))
+		(line (pt 240 32)(pt 240 168))
+		(line (pt 160 168)(pt 240 168))
+		(line (pt 160 32)(pt 160 168))
+		(line (pt 161 52)(pt 161 76))
+		(line (pt 162 52)(pt 162 76))
+		(line (pt 161 92)(pt 161 116))
+		(line (pt 162 92)(pt 162 116))
+		(line (pt 161 132)(pt 161 156))
+		(line (pt 162 132)(pt 162 156))
+		(line (pt 0 0)(pt 400 0))
+		(line (pt 400 0)(pt 400 184))
+		(line (pt 0 184)(pt 400 184))
+		(line (pt 0 0)(pt 0 184))
+	)
+)
+(connector
+	(pt 384 168)
+	(pt 440 168)
+)
+(connector
+	(pt 384 208)
+	(pt 440 208)
+)
+(connector
+	(pt 384 248)
+	(pt 440 248)
+)
