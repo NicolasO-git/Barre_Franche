@@ -1,0 +1,81 @@
+Altera SOPC Builder Version 11.01 Build 208
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2019.11.14 09:50:15 (*) mk_custom_sdk starting
+# 2019.11.14 09:50:15 (*) Reading project C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/unnamed.ptf.
+
+# 2019.11.14 09:50:15 (*) Finding all CPUs
+# 2019.11.14 09:50:15 (*) Finding all available components
+
+# 2019.11.14 09:50:15 (*) Reading C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/.sopc_builder/install.ptf
+
+# 2019.11.14 09:50:15 (*) Found 63 components
+
+# 2019.11.14 09:50:15 (*) Finding all peripherals
+
+# 2019.11.14 09:50:15 (*) Finding software components
+
+# 2019.11.14 09:50:15 (*) (Legacy SDK Generation Skipped)
+# 2019.11.14 09:50:15 (*) (All TCL Script Generation Skipped)
+# 2019.11.14 09:50:15 (*) (No Libraries Built)
+# 2019.11.14 09:50:15 (*) (Contents Generation Skipped)
+# 2019.11.14 09:50:15 (*) mk_custom_sdk finishing
+# 2019.11.14 09:50:15 (*) Starting generation for system: unnamed.
+
+..
+.
+.
+.
+.
+
+# 2019.11.14 09:50:16 (*) Running Generator Program for cpu_0
+
+# 2019.11.14 09:50:16 (*) Starting Nios II generation
+# 2019.11.14 09:50:16 (*)   Checking for plaintext license.
+# 2019.11.14 09:50:16 (*)   Couldn't query license setup in Quartus directory c:/altera/11.0sp1/quartus
+# 2019.11.14 09:50:16 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2019.11.14 09:50:16 (*)   LM_LICENSE_FILE environment variable is empty
+# 2019.11.14 09:50:16 (*)   Plaintext license not found.
+# 2019.11.14 09:50:16 (*)   No license required to generate encrypted Nios II/e.
+
+# 2019.11.14 09:50:16 (*)   Getting CPU configuration settings
+# 2019.11.14 09:50:16 (*)   Elaborating CPU configuration settings
+# 2019.11.14 09:50:16 (*)   Creating all objects for CPU
+# 2019.11.14 09:50:17 (*)   Generating HDL from CPU objects
+# 2019.11.14 09:50:17 (*)   Creating plain-text HDL
+# 2019.11.14 09:50:19 (*) Done Nios II generation
+
+# 2019.11.14 09:50:19 (*) Running Generator Program for sysid
+
+# 2019.11.14 09:50:20 (*) Running Generator Program for jtag_uart_0
+
+# 2019.11.14 09:50:20 (*) Running Generator Program for onchip_memory2_0
+
+# 2019.11.14 09:50:20 (*) Running Generator Program for Boutons
+
+# 2019.11.14 09:50:21 (*) Running Generator Program for Leds
+
+
+# 2019.11.14 09:50:21 (*) Making arbitration and system (top) modules.
+
+# 2019.11.14 09:50:23 (*) Generating Quartus symbol for top level: unnamed
+
+# 2019.11.14 09:50:23 (*) Symbol C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/unnamed.bsf already exists, no need to regenerate
+# 2019.11.14 09:50:23 (*) Creating command-line system-generation script: C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/unnamed_generation_script
+
+# 2019.11.14 09:50:23 (*) Running setup for HDL simulator: modelsim
+
+
+# 2019.11.14 09:50:23 (*) Completed generation for system: unnamed.
+# 2019.11.14 09:50:23 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/unnamed.ptf 
+  System HDL Model : C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/unnamed.vhd 
+  System Generation Script : C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/unnamed_generation_script 
+
+
+# 2019.11.14 09:50:23 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

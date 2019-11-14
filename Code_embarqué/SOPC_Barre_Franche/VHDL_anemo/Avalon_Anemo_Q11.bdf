@@ -1,0 +1,135 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 232 216 400 232)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Clk" (rect 5 0 22 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 232 264 400 280)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Reset_n" (rect 5 0 47 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 232 296 400 312)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Vent" (rect 5 0 28 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(symbol
+	(rect 496 208 784 320)
+	(text "Avalon_Anemo" (rect 4 0 105 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 4 96 21 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_0 " (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "clk_0 " (rect 20 25 53 39)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset_n " (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "reset_n " (rect 20 41 67 55)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "in_freq_anemometre_to_the_AvalonAnemo_0 " (rect 0 0 264 14)(font "Arial" (font_size 8)))
+		(text "in_freq_anemometre_to_the_AvalonAnemo_0 " (rect 20 73 284 87)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(drawing
+		(line (pt 16 64)(pt 271 64)(color 0 0 0)(dotted))
+		(rectangle (rect 16 16 272 96))
+	)
+)
+(connector
+	(pt 496 288)
+	(pt 496 304)
+)
+(connector
+	(pt 432 264)
+	(pt 496 264)
+)
+(connector
+	(pt 496 256)
+	(pt 496 264)
+)
+(connector
+	(pt 488 240)
+	(pt 488 224)
+)
+(connector
+	(pt 496 240)
+	(pt 488 240)
+)
+(connector
+	(pt 488 224)
+	(pt 400 224)
+)
+(connector
+	(pt 432 264)
+	(pt 432 272)
+)
+(connector
+	(pt 432 272)
+	(pt 400 272)
+)
+(connector
+	(pt 400 304)
+	(pt 496 304)
+)
