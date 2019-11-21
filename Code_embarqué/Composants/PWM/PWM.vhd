@@ -4,17 +4,18 @@ use IEEE.std_logic_unsigned.all;
 use IEEE.std_logic_arith.all;
 entity PWM is
 port (
-clk,reset_n: in std_logic;
-freq : in std_logic_vector (31 downto 0); 
-duty : in std_logic_vector (31 downto 0); 
+clk		: in std_logic;
+freq 	: in std_logic_vector (31 downto 0); 
+duty 	: in std_logic_vector (31 downto 0); 
 out_pwm: out std_logic
 );
 end entity;
 
 ARCHITECTURE arch_pwm of PWM IS
 -- signaux relatifs au circuit gestion PWM
-	signal counter : std_logic_vector (31 downto 0);
-	signal pwm_on: std_logic;
+	signal counter 	:	std_logic_vector (31 downto 0);
+	signal pwm_on	:	std_logic;
+	signal reset_n	:	std_logic;
 BEGIN
 
 divide: process (clk, reset_n) 
