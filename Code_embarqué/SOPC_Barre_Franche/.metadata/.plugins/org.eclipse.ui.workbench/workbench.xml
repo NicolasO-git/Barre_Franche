@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="24" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="-8" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -37,11 +37,11 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" partName="hello_world_small.c" path="C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/software/Projet_test/hello_world_small.c" title="hello_world_small.c" tooltip="Projet_test/hello_world_small.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Projet_test/hello_world_small.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3752" selectionTopPixel="1344"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="3839" selectionTopPixel="1344"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/software/Projet_test_bsp/system.h" title="system.h" tooltip="Projet_test_bsp/system.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Projet_test_bsp/system.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="2239" selectionTopPixel="918"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2246" selectionTopPixel="969"/>
 </editor>
 </editors>
 <views>
@@ -288,6 +288,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_barrefranche/hello_world.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Projet_test/hello_world_small.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Projet_test_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Projet_test_bsp/system.h"/>
 </editors>
 <item historyLabel="hello_world.c" index="0">
 <position info="not_deleted" x="670" y="0"/>
@@ -364,8 +365,14 @@
 <item historyLabel="hello_world_small.c" index="1">
 <position info="not_deleted" x="4058" y="0"/>
 </item>
-<item active="true" historyLabel="hello_world_small.c" index="1">
+<item historyLabel="hello_world_small.c" index="1">
 <position info="not_deleted" x="4058" y="0"/>
+</item>
+<item historyLabel="system.h" index="3">
+<position info="not_deleted" x="2246" y="0"/>
+</item>
+<item active="true" historyLabel="hello_world_small.c" index="1">
+<position info="not_deleted" x="3764" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
