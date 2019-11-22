@@ -2,15 +2,30 @@
 \subsection{Introduction technique}
 Le projet qui nous est demandé est basé sur les SOC et plus particulièrement sur un FPGA, de chez Altera, embarqué dans un voilier pour en piloter la barre-franche.
 \newline
-Ce dispositif électronique fonctionnera à l'aide de différentes entrées/sorties (gyroscope, anémométre, GPS, convertisseur analogique/numérique, vérin, boutons, buzzer).
+Ce dispositif électronique fonctionnera à l'aide de différentes entrées/sorties (gyroscope, anémomètre, GPS, convertisseur analogique/numérique, vérin, boutons, buzzer).
 \subsection{Cahier des charges général}
-Durant ce projet, nous allons utiliser les différentes compétences acquises à travers les différents cours de l'année et les mettre en corélation pour mener à bien ce dernier. Le projet devra respecter certains critères présentés ci-dessous :
+Durant ce projet, nous allons utiliser les différentes compétences acquises à travers les différents cours de l'année et les mettre en corrélation pour mener à bien ce dernier. Le projet devra respecter certains critères présentés ci-dessous :
 \begin{enumerate}
     \item   Le dispositif devra utiliser un appareil de mesure pour capter la valeur de la vitesse du vent.
     \item   Le dispositif devra utiliser un appareil de mesure pour capter la direction du vent.
-    \item   Le dispositif devra receptionner des données GPS, traiter ces données et agir sur le dispositif en fonction des résultats obtenus après traitement.
-    \item
+    \item   Le dispositif devra réceptionner des données GPS, traiter ces données et agir sur le dispositif en fonction des résultats obtenus après traitement.
+    \item   Le dispositif devra avoir une interface entre l'opérateur et le voilier.
+    \item   Le dispositif devra piloter la barre-franche du voilier à l'aide des différents appareils pour venir piloter un vérin. 
 \end{enumerate}
+Pour des raisons pratiques et de temps nous avons implémenté la mesure de la vitesse du vent, la gestion du vérin ainsi que l'asservissement du vérin.
+\newpage
 \subsection{Cahier des charges technique}
+Le projet se porte sur la réalisation d'un dispositif embarqué à base de FPGA, de chez Altera. Il sera composé de deux parties principales une partie Hardware sur le FPGA et une partie Software intégrée/développée dans le FPGA (SOPC). Les deux parties communiqueront par le biais du Bus Avalon, qui est le Bus développé par Altera pour leur SOC.
 
-
+Le coeur du projet sera composé d'un FPGA Cyclone IV EP4CE22F17C6N du fondeur Altera permettant le développement du projet Hardware et Software sur la même carte d'évaluation. Il sera nécessaire d'implémenter des fonctions spécifiques.
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \begin{center}
+      \includegraphics[angle=90, width=0.29\textwidth]{images/DE0.jpg}
+      \caption{DE0 Nano Altera}
+    \end{center}
+  \end{wrapfigure}  
+\begin{enumerate}
+    \item Une fonction qui permettra de lire la mesure de la vitesse du vent (0-250km/h). La fonction devra lire la sortie de l'anémomètre qui est une sortie logique de fréquence variable (0 à 250 Hz). 
+    \item Une fonction générant un signal PWM qui sera utilisé dans plusieurs parties du projet. Cette fonction sera intégré plus tard dans le SOPC du FPGA permettant la génération d'un signal PWM qu'on utilisera au travers du Bus Avalon.
+    \item Une implémentation d'un MCU dans le FPGA grâce à l'outil SOPC du logiciel Quartus d'Altera. Celui permettra le traitement (à compléter.)
+\end{enumerate}
