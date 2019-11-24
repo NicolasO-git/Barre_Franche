@@ -16,8 +16,7 @@ Pour des raisons pratiques et de temps nous avons implémenté la mesure de la v
 \newpage
 \subsection{Cahier des charges technique}
 Le projet se porte sur la réalisation d'un dispositif embarqué à base de FPGA, de chez Altera. Il sera composé de deux parties principales une partie Hardware sur le FPGA et une partie Software intégrée/développée dans le FPGA (SOPC). Les deux parties communiqueront par le biais du Bus Avalon, qui est le Bus développé par Altera pour leur SOC.
-
-Le coeur du projet sera composé d'un FPGA Cyclone IV EP4CE22F17C6N du fondeur Altera permettant le développement du projet Hardware et Software sur la même carte d'évaluation. Il sera nécessaire d'implémenter des fonctions spécifiques.
+Le cœur du projet sera composé d'un FPGA Cyclone IV EP4CE22F17C6N du fondeur Altera permettant le développement du projet Hardware et Software sur la même carte d'évaluation. Il sera nécessaire d'implémenter des fonctions spécifiques.
 \begin{wrapfigure}{r}{0.4\textwidth}
     \begin{center}
       \includegraphics[angle=90, width=0.29\textwidth]{images/DE0.jpg}
@@ -27,5 +26,5 @@ Le coeur du projet sera composé d'un FPGA Cyclone IV EP4CE22F17C6N du fondeur A
 \begin{enumerate}
     \item Une fonction qui permettra de lire la mesure de la vitesse du vent (0-250km/h). La fonction devra lire la sortie de l'anémomètre qui est une sortie logique de fréquence variable (0 à 250 Hz). 
     \item Une fonction générant un signal PWM qui sera utilisé dans plusieurs parties du projet. Cette fonction sera intégré plus tard dans le SOPC du FPGA permettant la génération d'un signal PWM qu'on utilisera au travers du Bus Avalon.
-    \item Une implémentation d'un MCU dans le FPGA grâce à l'outil SOPC du logiciel Quartus d'Altera. Celui-ci permettra le traitement (à compléter.)
+    \item Une implémentation d'un MCU dans le FPGA grâce à l'outil SOPC du logiciel d'Altera. Celui-ci permettra le traitement (à compléter.)
 \end{enumerate}
