@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2011 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -20,52 +20,45 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 192 112)
-	(text "MEF" (rect 5 0 27 12)(font "Arial" ))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(rect 16 16 184 112)
+	(text "MEF" (rect 5 0 26 12)(font "Arial" ))
+	(text "inst" (rect 8 80 36 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(text "Clk" (rect 0 0 21 12)(font "Arial" ))
+		(text "Clk" (rect 21 27 42 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "Raz_n" (rect 0 0 30 12)(font "Arial" ))
-		(text "Raz_n" (rect 21 43 51 55)(font "Arial" ))
+		(text "ARaz_n" (rect 0 0 42 12)(font "Arial" ))
+		(text "ARaz_n" (rect 21 43 63 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "Data_in" (rect 0 0 37 12)(font "Arial" ))
-		(text "Data_in" (rect 21 59 58 71)(font "Arial" ))
+		(text "Continu" (rect 0 0 49 12)(font "Arial" ))
+		(text "Continu" (rect 21 59 70 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
-		(pt 176 32)
+		(pt 168 32)
 		(output)
-		(text "cs_n" (rect 0 0 23 12)(font "Arial" ))
-		(text "cs_n" (rect 132 27 155 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 1))
+		(text "R" (rect 0 0 7 12)(font "Arial" ))
+		(text "R" (rect 140 27 147 39)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32)(line_width 1))
 	)
 	(port
-		(pt 176 48)
+		(pt 168 48)
 		(output)
-		(text "clk_adc" (rect 0 0 37 12)(font "Arial" ))
-		(text "clk_adc" (rect 118 43 155 55)(font "Arial" ))
-		(line (pt 176 48)(pt 160 48)(line_width 1))
-	)
-	(port
-		(pt 176 64)
-		(output)
-		(text "angle_barre[11..0]" (rect 0 0 88 12)(font "Arial" ))
-		(text "angle_barre[11..0]" (rect 67 59 155 71)(font "Arial" ))
-		(line (pt 176 64)(pt 160 64)(line_width 3))
+		(text "Rst_pulse" (rect 0 0 63 12)(font "Arial" ))
+		(text "Rst_pulse" (rect 84 43 147 55)(font "Arial" ))
+		(line (pt 168 48)(pt 152 48)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 160 80)(line_width 1))
+		(rectangle (rect 16 16 152 80)(line_width 1))
 	)
 )

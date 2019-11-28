@@ -58,19 +58,19 @@
          type = "long";
       }
    }
-   element AvalonVerin_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "69632";
-         type = "long";
-      }
-   }
    element Pwm_avalon_0.avalon_slave_0
    {
       datum baseAddress
       {
          value = "69704";
+         type = "long";
+      }
+   }
+   element AvalonVerin_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "69632";
          type = "long";
       }
    }
@@ -127,11 +127,11 @@
          type = "int";
       }
    }
-   element Leds.s1
+   element onchip_memory2_0.s1
    {
       datum baseAddress
       {
-         value = "69680";
+         value = "32768";
          type = "long";
       }
    }
@@ -143,11 +143,11 @@
          type = "long";
       }
    }
-   element onchip_memory2_0.s1
+   element Leds.s1
    {
       datum baseAddress
       {
-         value = "32768";
+         value = "69680";
          type = "long";
       }
    }
@@ -175,7 +175,7 @@
  <parameter name="projectName" value="Barre_Franche.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
  <parameter name="systemHash" value="-10473380597" />
- <parameter name="timeStamp" value="1574932701840" />
+ <parameter name="timeStamp" value="1574934383319" />
  <module kind="clock_source" version="11.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />

@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II"
 -- VERSION		"Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition"
--- CREATED		"Thu Nov 28 09:42:29 2019"
+-- CREATED		"Thu Nov 28 10:42:40 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -55,7 +55,16 @@ COMPONENT gestion_butee
 	);
 END COMPONENT;
 
-COMPONENT mef
+COMPONENT pwm
+	PORT(clk : IN STD_LOGIC;
+		 Raz_n : IN STD_LOGIC;
+		 duty : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		 freq : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		 out_pwm : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT mef_verin
 	PORT(clk : IN STD_LOGIC;
 		 Raz_n : IN STD_LOGIC;
 		 Data_in : IN STD_LOGIC;
@@ -63,15 +72,6 @@ COMPONENT mef
 		 clk_adc : OUT STD_LOGIC;
 		 sortie_1M : OUT STD_LOGIC;
 		 angle_barre : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
-	);
-END COMPONENT;
-
-COMPONENT pwm
-	PORT(clk : IN STD_LOGIC;
-		 Raz_n : IN STD_LOGIC;
-		 duty : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-		 freq : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-		 out_pwm : OUT STD_LOGIC
 	);
 END COMPONENT;
 
@@ -94,7 +94,15 @@ PORT MAP(pwm_on => SYNTHESIZED_WIRE_0,
 		 out_sens => out_sens);
 
 
-b2v_inst1 : mef
+b2v_inst2 : pwm
+PORT MAP(clk => Clk_50,
+		 Raz_n => Raz_n,
+		 duty => Duty,
+		 freq => Freq,
+		 out_pwm => SYNTHESIZED_WIRE_0);
+
+
+b2v_inst3 : mef_verin
 PORT MAP(clk => Clk_50,
 		 Raz_n => Raz_n,
 		 Data_in => Data_in,
@@ -102,14 +110,6 @@ PORT MAP(clk => Clk_50,
 		 clk_adc => Clk_adc,
 		 sortie_1M => Clk_1M,
 		 angle_barre => SYNTHESIZED_WIRE_1);
-
-
-b2v_inst2 : pwm
-PORT MAP(clk => Clk_50,
-		 Raz_n => Raz_n,
-		 duty => Duty,
-		 freq => Freq,
-		 out_pwm => SYNTHESIZED_WIRE_0);
 
 
 END bdf_type;

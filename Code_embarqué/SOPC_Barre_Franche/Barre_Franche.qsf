@@ -55,10 +55,11 @@ set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_R8 -to Clk_50
 set_location_assignment PIN_A8 -to Vent
 set_location_assignment PIN_D3 -to A_Rz
+set_global_assignment -name VHDL_FILE ../Composants/MEF_Verin/MEF_Verin.vhd
+set_global_assignment -name VHDL_FILE ../Composants/MEF/MEF.vhd
 set_global_assignment -name VHDL_FILE VHDL_verrin/Verin.vhd
 set_global_assignment -name VHDL_FILE ../Composants/PWM/PWM.vhd
 set_global_assignment -name VHDL_FILE ../Composants/Butee/Gestion_butee.vhd
-set_global_assignment -name VHDL_FILE ../../../../../Desktop/Test_ROUTIER_OTAL/MEF/MEF.vhd
 set_global_assignment -name VHDL_FILE ../F1_Conversion_infos_vent/F1_1/F1_1_valide.vhd
 set_global_assignment -name VHDL_FILE ../Composants/Reg/Reg.vhd
 set_global_assignment -name VHDL_FILE ../Composants/Div/Div.vhd
@@ -67,4 +68,7 @@ set_global_assignment -name VHDL_FILE ../Composants/Cpt/Cpt.vhd
 set_global_assignment -name VHDL_FILE ../Composants/Bascule_D/Bascule_D.VHD
 set_global_assignment -name BDF_FILE Barre_Franche.bdf
 set_global_assignment -name QIP_FILE unnamed.qip
+set_location_assignment PIN_T15 -to Data_in
+set_location_assignment PIN_J15 -to BP[0]
+set_location_assignment PIN_E1 -to BP[1]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

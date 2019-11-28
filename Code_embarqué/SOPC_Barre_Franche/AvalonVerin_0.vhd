@@ -16,8 +16,8 @@ entity AvalonVerin_0 is
 		address    : in  std_logic_vector(2 downto 0)  := (others => '0'); --               .address
 		writedata  : in  std_logic_vector(31 downto 0) := (others => '0'); --               .writedata
 		readdata   : out std_logic_vector(31 downto 0);                    --               .readdata
-		cs_n       : out std_logic;                                        --    conduit_end.cs_n
-		out_pwm    : out std_logic;                                        --               .out_pwm
+		out_pwm    : out std_logic;                                        --    conduit_end.out_pwm
+		cs_n       : out std_logic;                                        --               .cs_n
 		clk_adc    : out std_logic;                                        --               .clk_adc
 		out_sens   : out std_logic;                                        --               .out_sens
 		data_in    : in  std_logic                     := '0'              --               .data_in
@@ -34,8 +34,8 @@ architecture rtl of AvalonVerin_0 is
 			address    : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
 			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
-			cs_n       : out std_logic;                                        -- cs_n
 			out_pwm    : out std_logic;                                        -- out_pwm
+			cs_n       : out std_logic;                                        -- cs_n
 			clk_adc    : out std_logic;                                        -- clk_adc
 			out_sens   : out std_logic;                                        -- out_sens
 			data_in    : in  std_logic                     := 'X'              -- data_in
@@ -53,8 +53,8 @@ begin
 			address    => address,    --               .address
 			writedata  => writedata,  --               .writedata
 			readdata   => readdata,   --               .readdata
-			cs_n       => cs_n,       --    conduit_end.cs_n
-			out_pwm    => out_pwm,    --               .out_pwm
+			out_pwm    => out_pwm,    --    conduit_end.out_pwm
+			cs_n       => cs_n,       --               .cs_n
 			clk_adc    => clk_adc,    --               .clk_adc
 			out_sens   => out_sens,   --               .out_sens
 			data_in    => data_in     --               .data_in

@@ -82,11 +82,18 @@
 #include "unistd.h"
 #include "system.h"
 #include "stdio.h"
+#include "altera_avalon_pio_regs.h"
 
 #define freq (unsigned int*)PWM_AVALON_0_BASE
 #define duty (unsigned int*)(PWM_AVALON_0_BASE + 4)
 #define vent (unsigned int*)(AVALONANEMO_0_BASE + 4)
 #define config (unsigned int*)AVALONANEMO_0_BASE
+#define butee_d (int *)(GESTION_VERIN_0_BASE+12)
+#define butee_g (int *)(GESTION_VERIN_0_BASE+8)
+#define freq (int *)GESTION_VERIN_0_BASE
+#define duty (int *)(GESTION_VERIN_0_BASE+4)
+#define config (int *)(GESTION_VERIN_0_BASE+16)
+#define angle_barre (int *)(GESTION_VERIN_0_BASE+20)
 
 
 int main()
