@@ -126,9 +126,9 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011020";
+               Offset_Address = "0x00011040";
             }
-            Base_Address = "0x00011020";
+            Base_Address = "0x00011040";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
             {
@@ -262,9 +262,9 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011028";
+               Offset_Address = "0x00011048";
             }
-            Base_Address = "0x00011028";
+            Base_Address = "0x00011048";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
             {
@@ -768,25 +768,25 @@ SYSTEM unnamed
             }
             Entry AvalonAnemo_0/avalon_slave_0
             {
-               address = "0x00011020";
+               address = "0x00011040";
                span = "0x00000008";
                is_bridge = "0";
             }
             Entry Pwm_avalon_0/avalon_slave_0
             {
-               address = "0x00011028";
+               address = "0x00011048";
                span = "0x00000008";
                is_bridge = "0";
             }
             Entry sysid/control_slave
             {
-               address = "0x00011030";
+               address = "0x00011050";
                span = "0x00000008";
                is_bridge = "0";
             }
             Entry jtag_uart_0/avalon_jtag_slave
             {
-               address = "0x00011038";
+               address = "0x00011058";
                span = "0x00000008";
                is_bridge = "0";
             }
@@ -798,14 +798,20 @@ SYSTEM unnamed
             }
             Entry Boutons/s1
             {
-               address = "0x00011000";
+               address = "0x00011020";
                span = "0x00000010";
                is_bridge = "0";
             }
             Entry Leds/s1
             {
-               address = "0x00011010";
+               address = "0x00011030";
                span = "0x00000010";
+               is_bridge = "0";
+            }
+            Entry AvalonVerin_0/avalon_slave_0
+            {
+               address = "0x00011000";
+               span = "0x00000020";
                is_bridge = "0";
             }
          }
@@ -1580,9 +1586,9 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011030";
+               Offset_Address = "0x00011050";
             }
-            Base_Address = "0x00011030";
+            Base_Address = "0x00011050";
             Has_IRQ = "0";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
@@ -1604,7 +1610,7 @@ SYSTEM unnamed
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5DCD14F4</b> (timestamp: Thu Nov 14, 2019 @9:48 AM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5DDF90DE</b> (timestamp: Thu Nov 28, 2019 @10:18 AM)";
             MESSAGES 
             {
             }
@@ -1613,7 +1619,7 @@ SYSTEM unnamed
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1573721332u";
+         timestamp = "1574932702u";
          regenerate_values = "0";
          MAKE 
          {
@@ -1622,7 +1628,7 @@ SYSTEM unnamed
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011030 --id=0 --timestamp=1573721332";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011050 --id=0 --timestamp=1574932702";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }
@@ -1767,13 +1773,13 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011038";
+               Offset_Address = "0x00011058";
             }
             IRQ_MASTER cpu_0/data_master
             {
                IRQ_Number = "16";
             }
-            Base_Address = "0x00011038";
+            Base_Address = "0x00011058";
             Address_Group = "0";
          }
       }
@@ -2224,9 +2230,9 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011000";
+               Offset_Address = "0x00011020";
             }
-            Base_Address = "0x00011000";
+            Base_Address = "0x00011020";
             Has_IRQ = "0";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
@@ -2392,9 +2398,9 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011010";
+               Offset_Address = "0x00011030";
             }
-            Base_Address = "0x00011010";
+            Base_Address = "0x00011030";
             Has_IRQ = "0";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
@@ -2470,6 +2476,170 @@ SYSTEM unnamed
          Simulation_HDL_Files = "";
          Synthesis_HDL_Files = "__PROJECT_DIRECTORY__/Leds.vhd";
          Synthesis_Only_Files = "";
+      }
+   }
+   MODULE AvalonVerin_0
+   {
+      SLAVE avalon_slave_0
+      {
+         PORT_WIRING 
+         {
+            PORT clk
+            {
+               type = "clk";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT reset_n
+            {
+               type = "reset_n";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT chipselect
+            {
+               type = "chipselect";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT write_n
+            {
+               type = "write_n";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT address
+            {
+               type = "address";
+               width = "3";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT writedata
+            {
+               type = "writedata";
+               width = "32";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT readdata
+            {
+               type = "readdata";
+               width = "32";
+               direction = "output";
+               Is_Enabled = "1";
+            }
+         }
+         SYSTEM_BUILDER_INFO 
+         {
+            Bus_Type = "avalon";
+            Write_Wait_States = "0cycles";
+            Read_Wait_States = "1cycles";
+            Hold_Time = "0cycles";
+            Setup_Time = "0cycles";
+            Is_Printable_Device = "0";
+            Address_Alignment = "dynamic";
+            Well_Behaved_Waitrequest = "0";
+            Is_Nonvolatile_Storage = "0";
+            Address_Span = "32";
+            Read_Latency = "0";
+            Is_Memory_Device = "0";
+            Maximum_Pending_Read_Transactions = "0";
+            Minimum_Uninterrupted_Run_Length = "1";
+            Accepts_Internal_Connections = "1";
+            Write_Latency = "0";
+            Is_Flash = "0";
+            Data_Width = "32";
+            Address_Width = "3";
+            Maximum_Burst_Size = "1";
+            Register_Incoming_Signals = "0";
+            Register_Outgoing_Signals = "0";
+            Interleave_Bursts = "0";
+            Linewrap_Bursts = "0";
+            Burst_On_Burst_Boundaries_Only = "0";
+            Always_Burst_Max_Burst = "0";
+            Is_Big_Endian = "0";
+            Is_Enabled = "1";
+            MASTERED_BY cpu_0/data_master
+            {
+               priority = "1";
+               Offset_Address = "0x00011000";
+            }
+            Base_Address = "0x00011000";
+            Address_Group = "0";
+            IRQ_MASTER cpu_0/data_master
+            {
+               IRQ_Number = "NC";
+            }
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT cs_n
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT out_pwm
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT clk_adc
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT out_sens
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT data_in
+         {
+            type = "export";
+            width = "1";
+            direction = "input";
+            Is_Enabled = "1";
+         }
+      }
+      class = "no_legacy_module";
+      class_version = "7.08110";
+      gtf_class_name = "AvalonVerin";
+      gtf_class_version = "1.0";
+      SYSTEM_BUILDER_INFO 
+      {
+         Do_Not_Generate = "1";
+         Instantiate_In_System_Module = "1";
+         Is_Bridge = "0";
+         Is_Enabled = "1";
+         Clock_Source = "clk_0";
+         Has_Clock = "1";
+         View 
+         {
+            MESSAGES 
+            {
+            }
+         }
+      }
+      HDL_INFO 
+      {
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/VHDL_verrin/AvalonVerin.vhd,__PROJECT_DIRECTORY__/VHDL_verrin/Verin.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Butee/Gestion_butee.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/PWM/PWM.vhd,C:/Users/Etudiant/Desktop/Test_ROUTIER_OTAL/MEF/MEF.vhd,__PROJECT_DIRECTORY__/AvalonVerin_0.vhd";
+      }
+      WIZARD_SCRIPT_ARGUMENTS 
+      {
       }
    }
 }

@@ -6,10 +6,10 @@ LIBRARY work;
 entity AvalonAnemo is
     port 
     (
-        clk, reset_n, chipselect, write_n, in_freq_anemometre		    	:   in std_logic;
-        address 									                    				:   std_logic;
-        writedata                                                       :   in std_logic_vector(31 downto 0); 
-        readdata                                                        :   out std_logic_vector(31 downto 0)
+        clk, reset_n, chipselect, write_n, in_freq_anemometre   :   in std_logic;
+        address 									            :   std_logic;
+        writedata                                               :   in std_logic_vector(31 downto 0); 
+        readdata                                                :   out std_logic_vector(31 downto 0)
     );
 end entity AvalonAnemo;
 

@@ -18,5 +18,5 @@
  </clocktable>
  <window width="1920" height="1160" x="0" y="0" />
  <library
-   expandedCategories="Project,Library/Peripherals,Library/Peripherals/Microcontroller Peripherals,Library" />
+   expandedCategories="Library/Peripherals/Microcontroller Peripherals,Project,Library/Peripherals,Library" />
 </preferences>

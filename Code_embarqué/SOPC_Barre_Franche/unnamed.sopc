@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="unnamed">
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="deviceFamily" value="CYCLONEIVE" />
+ <parameter name="fabricMode" value="SOPC" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="true" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="maxAdditionalLatency" value="0" />
+ <parameter name="projectName" value="Barre_Franche" />
+ <parameter name="sopcBorderPoints" value="true" />
+ <parameter name="systemHash" value="1" />
+ <parameter name="timeStamp" value="1574930868592" />
+</system>

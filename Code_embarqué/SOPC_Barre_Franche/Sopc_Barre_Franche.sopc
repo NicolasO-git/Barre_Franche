@@ -10,7 +10,7 @@
          type = "int";
       }
    }
-   element Boutons
+   element AvalonVerin_0
    {
       datum _sortIndex
       {
@@ -18,11 +18,19 @@
          type = "int";
       }
    }
-   element Leds
+   element Boutons
    {
       datum _sortIndex
       {
          value = "7";
+         type = "int";
+      }
+   }
+   element Leds
+   {
+      datum _sortIndex
+      {
+         value = "8";
          type = "int";
       }
    }
@@ -38,15 +46,7 @@
    {
       datum baseAddress
       {
-         value = "69688";
-         type = "long";
-      }
-   }
-   element Pwm_avalon_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "69672";
+         value = "69720";
          type = "long";
       }
    }
@@ -54,7 +54,23 @@
    {
       datum baseAddress
       {
-         value = "69664";
+         value = "69696";
+         type = "long";
+      }
+   }
+   element AvalonVerin_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "69632";
+         type = "long";
+      }
+   }
+   element Pwm_avalon_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "69704";
          type = "long";
       }
    }
@@ -70,7 +86,7 @@
    {
       datum baseAddress
       {
-         value = "69680";
+         value = "69712";
          type = "long";
       }
    }
@@ -99,7 +115,7 @@
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "9";
          type = "int";
       }
    }
@@ -115,7 +131,15 @@
    {
       datum baseAddress
       {
-         value = "69648";
+         value = "69680";
+         type = "long";
+      }
+   }
+   element Boutons.s1
+   {
+      datum baseAddress
+      {
+         value = "69664";
          type = "long";
       }
    }
@@ -124,14 +148,6 @@
       datum baseAddress
       {
          value = "32768";
-         type = "long";
-      }
-   }
-   element Boutons.s1
-   {
-      datum baseAddress
-      {
-         value = "69632";
          type = "long";
       }
    }
@@ -158,15 +174,17 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="Barre_Franche.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="-5296190361" />
- <parameter name="timeStamp" value="1573721332453" />
+ <parameter name="systemHash" value="-10473380597" />
+ <parameter name="timeStamp" value="1574932701840" />
  <module kind="clock_source" version="11.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module kind="AvalonAnemo" version="1.0" enabled="1" name="AvalonAnemo_0" />
+ <module kind="AvalonAnemo" version="1.0" enabled="1" name="AvalonAnemo_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+ </module>
  <module kind="Pwm_avalon" version="1.0" enabled="1" name="Pwm_avalon_0">
   <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
  </module>
@@ -263,7 +281,7 @@
   <parameter name="dcache_numTCDM" value="_0" />
   <parameter name="dcache_lineSize" value="_32" />
   <parameter name="dcache_bursts" value="false" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xD000' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='Boutons.s1' start='0x11000' end='0x11010' /><slave name='Leds.s1' start='0x11010' end='0x11020' /><slave name='AvalonAnemo_0.avalon_slave_0' start='0x11020' end='0x11028' /><slave name='Pwm_avalon_0.avalon_slave_0' start='0x11028' end='0x11030' /><slave name='sysid.control_slave' start='0x11030' end='0x11038' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11038' end='0x11040' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xD000' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='AvalonVerin_0.avalon_slave_0' start='0x11000' end='0x11020' /><slave name='Boutons.s1' start='0x11020' end='0x11030' /><slave name='Leds.s1' start='0x11030' end='0x11040' /><slave name='AvalonAnemo_0.avalon_slave_0' start='0x11040' end='0x11048' /><slave name='Pwm_avalon_0.avalon_slave_0' start='0x11048' end='0x11050' /><slave name='sysid.control_slave' start='0x11050' end='0x11058' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11058' end='0x11060' /></address-map>]]></parameter>
   <parameter name="dataAddrWidth" value="17" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="cpuReset" value="false" />
@@ -345,6 +363,7 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="8" />
  </module>
+ <module kind="AvalonVerin" version="1.0" enabled="1" name="AvalonVerin_0" />
  <connection
    kind="clock"
    version="11.0"
@@ -378,7 +397,7 @@
    start="cpu_0.data_master"
    end="AvalonAnemo_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011020" />
+  <parameter name="baseAddress" value="0x00011040" />
  </connection>
  <connection
    kind="avalon"
@@ -386,7 +405,7 @@
    start="cpu_0.data_master"
    end="Pwm_avalon_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011028" />
+  <parameter name="baseAddress" value="0x00011048" />
  </connection>
  <connection kind="clock" version="11.0" start="clk_0.clk" end="sysid.clk" />
  <connection
@@ -395,7 +414,7 @@
    start="cpu_0.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011030" />
+  <parameter name="baseAddress" value="0x00011050" />
  </connection>
  <connection kind="clock" version="11.0" start="clk_0.clk" end="jtag_uart_0.clk" />
  <connection
@@ -404,7 +423,7 @@
    start="cpu_0.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011038" />
+  <parameter name="baseAddress" value="0x00011058" />
  </connection>
  <connection
    kind="interrupt"
@@ -441,11 +460,24 @@
    start="cpu_0.data_master"
    end="Boutons.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011000" />
+  <parameter name="baseAddress" value="0x00011020" />
  </connection>
  <connection kind="clock" version="11.0" start="clk_0.clk" end="Leds.clk" />
  <connection kind="avalon" version="11.0" start="cpu_0.data_master" end="Leds.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011010" />
+  <parameter name="baseAddress" value="0x00011030" />
+ </connection>
+ <connection
+   kind="clock"
+   version="11.0"
+   start="clk_0.clk"
+   end="AvalonVerin_0.clock" />
+ <connection
+   kind="avalon"
+   version="11.0"
+   start="cpu_0.data_master"
+   end="AvalonVerin_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00011000" />
  </connection>
 </system>

@@ -5,9 +5,10 @@ use IEEE.numeric_std.all;
 entity Gestion_butee is
     port 
     (
-        pwm_on, sens, enable            :   in  std_logic;
-        angle_barre, butee_g, butee_d   :   in  std_logic_vector(11 downto 0);
-        out_pwm, out_sens               :   out std_logic
+        pwm_on, sens, enable	:	in  std_logic;
+        angle_barre				:	in  std_logic_vector(11 downto 0);			 
+		  butee_g, butee_d   	:	in  std_logic_vector(11 downto 0);
+        out_pwm, out_sens		: 	out std_logic
     );
 end entity Gestion_butee;
 
