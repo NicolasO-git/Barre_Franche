@@ -167,7 +167,7 @@ SYSTEM unnamed
       }
       HDL_INFO 
       {
-         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/VHDL_anemo/AvalonAnemo.vhd,__PROJECT_DIRECTORY__/AvalonAnemo_0.vhd";
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/VHDL_anemo/AvalonAnemo.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/F1_Conversion_infos_vent/F1_1/F1_1_valide.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Div/Div.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/MEF/MEF.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Detect_FM/Detect_FM.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Cpt/Cpt.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Reg/Reg.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Bascule_D/Bascule_D.VHD,__PROJECT_DIRECTORY__/AvalonAnemo_0.vhd";
       }
       WIZARD_SCRIPT_ARGUMENTS 
       {
@@ -810,7 +810,7 @@ SYSTEM unnamed
             }
             Entry AvalonVerin_0/avalon_slave_0
             {
-               address = "0x00011000";
+               address = "0x00011100";
                span = "0x00000020";
                is_bridge = "0";
             }
@@ -1610,7 +1610,7 @@ SYSTEM unnamed
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5DDF976F</b> (timestamp: Thu Nov 28, 2019 @10:46 AM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5DE4E77B</b> (timestamp: Mon Dec 2, 2019 @11:29 AM)";
             MESSAGES 
             {
             }
@@ -1619,7 +1619,7 @@ SYSTEM unnamed
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1574934383u";
+         timestamp = "1575282555u";
          regenerate_values = "0";
          MAKE 
          {
@@ -1628,7 +1628,7 @@ SYSTEM unnamed
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011050 --id=0 --timestamp=1574934383";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011050 --id=0 --timestamp=1575282555";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }
@@ -2567,9 +2567,9 @@ SYSTEM unnamed
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011000";
+               Offset_Address = "0x00011100";
             }
-            Base_Address = "0x00011000";
+            Base_Address = "0x00011100";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
             {
@@ -2579,6 +2579,13 @@ SYSTEM unnamed
       }
       PORT_WIRING 
       {
+         PORT data_in
+         {
+            type = "export";
+            width = "1";
+            direction = "input";
+            Is_Enabled = "1";
+         }
          PORT out_pwm
          {
             type = "export";
@@ -2607,13 +2614,6 @@ SYSTEM unnamed
             direction = "output";
             Is_Enabled = "1";
          }
-         PORT data_in
-         {
-            type = "export";
-            width = "1";
-            direction = "input";
-            Is_Enabled = "1";
-         }
       }
       class = "no_legacy_module";
       class_version = "7.08110";
@@ -2636,7 +2636,7 @@ SYSTEM unnamed
       }
       HDL_INFO 
       {
-         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/VHDL_verrin/AvalonVerin.vhd,__PROJECT_DIRECTORY__/VHDL_verrin/Verin.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Butee/Gestion_butee.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/MEF_Verin/MEF_Verin.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/PWM/PWM.vhd,__PROJECT_DIRECTORY__/AvalonVerin_0.vhd";
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/VHDL_verrin/AvalonVerin.vhd,__PROJECT_DIRECTORY__/VHDL_verrin/Verin.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/Butee/Gestion_butee.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/MEF/MEF.vhd,C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Composants/PWM/PWM.vhd,__PROJECT_DIRECTORY__/AvalonVerin_0.vhd";
       }
       WIZARD_SCRIPT_ARGUMENTS 
       {

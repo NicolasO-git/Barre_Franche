@@ -1,7 +1,7 @@
 PACKAGE install2 
 {
    # This file informs the Nios II IDE of non-legacy component paths.
-   # Generated 2019.11.28.10:46:41
+   # Generated 2019.12.02.11:29:16
    COMPONENT AvalonAnemo 
    {
       VERSION 1.0 
@@ -9,11 +9,11 @@ PACKAGE install2
          local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/VHDL_anemo";
       }
    }
-   COMPONENT AvalonVerin 
+   COMPONENT AvalonAnemo_0 
    {
       VERSION 1.0 
       {
-         local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/VHDL_verrin";
+         local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/Barre_Franche";
       }
    }
    COMPONENT AvalonVerin 
@@ -21,6 +21,13 @@ PACKAGE install2
       VERSION 1.0 
       {
          local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/VHDL_verrin";
+      }
+   }
+   COMPONENT AvalonVerin_0 
+   {
+      VERSION 1.0 
+      {
+         local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/Barre_Franche";
       }
    }
    COMPONENT Pwm_avalon 
@@ -28,6 +35,13 @@ PACKAGE install2
       VERSION 1.0 
       {
          local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/PWM_VHDL";
+      }
+   }
+   COMPONENT Pwm_avalon_0 
+   {
+      VERSION 1.0 
+      {
+         local = "C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/SOPC_Barre_Franche/Barre_Franche";
       }
    }
    COMPONENT alt_interlaken_pcs_siv 

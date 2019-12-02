@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project Barre_franche_essai ****
+
+make all 
+Info: Building ../Barre_franche_essai_bsp/
+make --no-print-directory -C ../Barre_franche_essai_bsp/
+[BSP build complete]
+[Barre_franche_essai build complete]

@@ -7,21 +7,20 @@ entity MEF_Verin is
     (
         clk, Raz_n, Data_in		:   in std_logic;
         cs_n, clk_adc           :   out std_logic;
-		  sortie_1M						: out std_logic;
         angle_barre             :   out std_logic_vector(11 downto 0)
     );
 end entity MEF_Verin;
 
 architecture rtl of MEF_Verin is
     TYPE State_type IS (etat0, etat1, etat2, etat3, etat4);
-    SIGNAL  s_clk_adc       :   	std_logic;
-    SIGNAL  fin             :   	std_logic;
-    SIGNAL  raz_compteur    :  	std_logic;
-    SIGNAL 	start_conv		 :		std_logic;
-    SIGNAL 	clk_1M			 :		std_logic;
-    SIGNAL  s_data          :   	std_logic_vector(11 downto 0);
-    signal	compt_front 	 : 	integer range 0 to 11;
-    SIGNAL  State           :   	State_Type;    		-- Création signal d'état MEF
+    SIGNAL  s_clk_adc       :   std_logic;
+    SIGNAL  fin             :   std_logic;
+    SIGNAL  raz_compteur    :   std_logic;
+    SIGNAL 	start_conv		:	std_logic;
+    SIGNAL 	clk_1M			:	std_logic;
+    SIGNAL  s_data          :  	std_logic_vector(11 downto 0);
+    signal	compt_front 	: 	integer range 0 to 11;
+    SIGNAL  State           :   State_Type;    		-- Création signal d'état MEF
 begin
 
 -- **********************************************************
@@ -151,5 +150,4 @@ gene_1M:	process(clk, Raz_n)
 --  MàJ des sorties
 --***********************************************************
     clk_adc <= s_clk_adc; 
-	 sortie_1M <=clk_1M;
 end architecture; 

@@ -16,7 +16,7 @@ entity Pwm_avalon_0 is
 		writedata  : in  std_logic_vector(31 downto 0) := (others => '0'); --               .writedata
 		readdata   : out std_logic_vector(31 downto 0);                    --               .readdata
 		reset_n    : in  std_logic                     := '0';             --          reset.reset_n
-		out_pwm    : out std_logic                                         --    conduit_end.readdatavalid_n
+		out_pwm    : out std_logic                                         --    conduit_end.out_pwm
 	);
 end entity Pwm_avalon_0;
 
@@ -30,7 +30,7 @@ architecture rtl of Pwm_avalon_0 is
 			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
 			reset_n    : in  std_logic                     := 'X';             -- reset_n
-			out_pwm    : out std_logic                                         -- readdatavalid_n
+			out_pwm    : out std_logic                                         -- out_pwm
 		);
 	end component Pwm_avalon;
 
@@ -45,7 +45,7 @@ begin
 			writedata  => writedata,  --               .writedata
 			readdata   => readdata,   --               .readdata
 			reset_n    => reset_n,    --          reset.reset_n
-			out_pwm    => out_pwm     --    conduit_end.readdatavalid_n
+			out_pwm    => out_pwm     --    conduit_end.out_pwm
 		);
 
 end architecture rtl; -- of Pwm_avalon_0

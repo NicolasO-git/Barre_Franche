@@ -16,7 +16,7 @@ entity AvalonAnemo_0 is
 		address            : in  std_logic                     := '0';             --               .address
 		writedata          : in  std_logic_vector(31 downto 0) := (others => '0'); --               .writedata
 		readdata           : out std_logic_vector(31 downto 0);                    --               .readdata
-		in_freq_anemometre : in  std_logic                     := '0'              --    conduit_end.export
+		in_freq_anemometre : in  std_logic                     := '0'              --    conduit_end.in_freq_anemometre
 	);
 end entity AvalonAnemo_0;
 
@@ -30,7 +30,7 @@ architecture rtl of AvalonAnemo_0 is
 			address            : in  std_logic                     := 'X';             -- address
 			writedata          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			readdata           : out std_logic_vector(31 downto 0);                    -- readdata
-			in_freq_anemometre : in  std_logic                     := 'X'              -- export
+			in_freq_anemometre : in  std_logic                     := 'X'              -- in_freq_anemometre
 		);
 	end component AvalonAnemo;
 
@@ -45,7 +45,7 @@ begin
 			address            => address,            --               .address
 			writedata          => writedata,          --               .writedata
 			readdata           => readdata,           --               .readdata
-			in_freq_anemometre => in_freq_anemometre  --    conduit_end.export
+			in_freq_anemometre => in_freq_anemometre  --    conduit_end.in_freq_anemometre
 		);
 
 end architecture rtl; -- of AvalonAnemo_0

@@ -20,13 +20,12 @@ architecture rtl of AvalonVerin is
     SIGNAL Enable           :   	STD_LOGIC;
     SIGNAL Butee_droite     :   	STD_LOGIC_VECTOR(11 DOWNTO 0);
     SIGNAL Butee_gauche     :   	STD_LOGIC_VECTOR(11 DOWNTO 0);
-	 SIGNAL angle_barre      :   	STD_LOGIC_VECTOR(11 DOWNTO 0);
+	SIGNAL angle_barre      :   	STD_LOGIC_VECTOR(11 DOWNTO 0);
     SIGNAL Duty             :   	STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL Freq             :   	STD_LOGIC_VECTOR(15 DOWNTO 0);
-    SIGNAL Clk_1M           :  	STD_LOGIC;
-    SIGNAL config           : 	STD_LOGIC_VECTOR(2 downto 0);
-	 SIGNAL fin_course_d		 :		STD_LOGIC;
-	 SIGNAL fin_course_g 	 : 	STD_LOGIC;
+    SIGNAL config           : 		STD_LOGIC_VECTOR(2 downto 0);
+	SIGNAL fin_course_d		:		STD_LOGIC;
+	SIGNAL fin_course_g 	: 		STD_LOGIC;
     
     Component Verin 
 	PORT
@@ -43,8 +42,7 @@ architecture rtl of AvalonVerin is
 		out_pwm         :  OUT  STD_LOGIC;
 		out_sens        :  OUT  STD_LOGIC;
 		Chipselect      :  OUT  STD_LOGIC;
-		Clk_adc         :  OUT  STD_LOGIC;
-		Clk_1M          :  OUT  STD_LOGIC
+		Clk_adc         :  OUT  STD_LOGIC
 	);
     END Component;
 
@@ -122,9 +120,8 @@ PORT map
     Freq            => Freq,
     out_pwm         => out_pwm,
     out_sens        => out_sens,
-    Chipselect		  => cs_n,
-    Clk_adc         => clk_adc,
-    Clk_1M          => Clk_1M
+    Chipselect		=> cs_n,
+    Clk_adc         => clk_adc
 );
 
 end architecture rtl;

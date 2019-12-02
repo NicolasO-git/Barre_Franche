@@ -234,23 +234,6 @@ applicable agreement for further details.
 	)
 	(annotation_block (location)(rect 872 328 928 344))
 )
-(pin
-	(output)
-	(rect 696 336 872 352)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Clk_1M" (rect 90 0 126 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 872 352 928 368))
-)
 (symbol
 	(rect 456 -40 640 88)
 	(text "PWM" (rect 5 0 30 12)(font "Arial" ))
@@ -359,9 +342,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 448 280 680 408)
+	(rect 448 280 680 376)
 	(text "MEF_Verin" (rect 5 0 58 12)(font "Arial" ))
-	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -400,19 +383,12 @@ applicable agreement for further details.
 	(port
 		(pt 232 64)
 		(output)
-		(text "sortie_1M" (rect 0 0 47 12)(font "Arial" ))
-		(text "sortie_1M" (rect 148 59 195 71)(font "Arial" ))
-		(line (pt 232 64)(pt 216 64))
-	)
-	(port
-		(pt 232 80)
-		(output)
 		(text "angle_barre[11..0]" (rect 0 0 88 12)(font "Arial" ))
-		(text "angle_barre[11..0]" (rect 84 75 172 87)(font "Arial" ))
-		(line (pt 232 80)(pt 216 80)(line_width 3))
+		(text "angle_barre[11..0]" (rect 84 59 172 71)(font "Arial" ))
+		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 216 112))
+		(rectangle (rect 16 16 216 80))
 	)
 )
 (connector
@@ -430,16 +406,6 @@ applicable agreement for further details.
 (connector
 	(pt 952 272)
 	(pt 424 272)
-	(bus)
-)
-(connector
-	(pt 952 360)
-	(pt 952 272)
-	(bus)
-)
-(connector
-	(pt 952 360)
-	(pt 680 360)
 	(bus)
 )
 (connector
@@ -465,10 +431,6 @@ applicable agreement for further details.
 (connector
 	(pt 688 320)
 	(pt 696 320)
-)
-(connector
-	(pt 696 344)
-	(pt 680 344)
 )
 (connector
 	(pt 376 -8)
@@ -559,6 +521,16 @@ applicable agreement for further details.
 (connector
 	(pt 688 152)
 	(pt 728 152)
+)
+(connector
+	(pt 952 272)
+	(pt 952 344)
+	(bus)
+)
+(connector
+	(pt 952 344)
+	(pt 680 344)
+	(bus)
 )
 (junction (pt 376 -8))
 (junction (pt 400 8))

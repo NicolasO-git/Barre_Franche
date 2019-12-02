@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II"
 -- VERSION		"Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition"
--- CREATED		"Thu Nov 28 10:42:40 2019"
+-- CREATED		"Mon Dec 02 09:37:29 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -36,8 +36,7 @@ ENTITY Verin IS
 		out_pwm :  OUT  STD_LOGIC;
 		out_sens :  OUT  STD_LOGIC;
 		Chipselect :  OUT  STD_LOGIC;
-		Clk_adc :  OUT  STD_LOGIC;
-		Clk_1M :  OUT  STD_LOGIC
+		Clk_adc :  OUT  STD_LOGIC
 	);
 END Verin;
 
@@ -70,7 +69,6 @@ COMPONENT mef_verin
 		 Data_in : IN STD_LOGIC;
 		 cs_n : OUT STD_LOGIC;
 		 clk_adc : OUT STD_LOGIC;
-		 sortie_1M : OUT STD_LOGIC;
 		 angle_barre : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
 	);
 END COMPONENT;
@@ -108,7 +106,6 @@ PORT MAP(clk => Clk_50,
 		 Data_in => Data_in,
 		 cs_n => Chipselect,
 		 clk_adc => Clk_adc,
-		 sortie_1M => Clk_1M,
 		 angle_barre => SYNTHESIZED_WIRE_1);
 
 
