@@ -1,8 +1,0 @@
-
-**** Build of configuration Nios II for project tg ****
-
-make all 
-Info: Building ../tg_bsp/
-make --no-print-directory -C ../tg_bsp/
-[BSP build complete]
-[tg build complete]

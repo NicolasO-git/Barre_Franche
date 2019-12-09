@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;sopc_barrefranche&apos;" deleteContents="true" description="Delete resource &apos;sopc_barrefranche&apos;" element1="/sopc_barrefranche" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1573721524234"/>&#x0A;<refactoring comment="Delete resource &apos;sopc_barrefranche_bsp&apos;" deleteContents="true" description="Delete resource &apos;sopc_barrefranche_bsp&apos;" element1="/sopc_barrefranche_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1573721543088"/>
-</session>

@@ -1,0 +1,12 @@
+
+**** Build of configuration Nios II for project Sopc_boutons ****
+
+make all 
+Info: Building ../Sopc_boutons_bsp/
+make --no-print-directory -C ../Sopc_boutons_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Sopc_boutons_bsp//HAL/inc -I../Sopc_boutons_bsp/ -I../Sopc_boutons_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:116: error: invalid type argument of 'unary *'
+make: *** [obj/hello_world_small.o] Error 1

@@ -12,7 +12,7 @@ entity MEF_Verin is
 end entity MEF_Verin;
 
 architecture rtl of MEF_Verin is
-    TYPE State_type IS (etat0, etat1, etat2, etat3, etat4);
+   
     SIGNAL  s_clk_adc       :   std_logic;
     SIGNAL  fin             :   std_logic;
     SIGNAL  raz_compteur    :   std_logic;
@@ -20,7 +20,9 @@ architecture rtl of MEF_Verin is
     SIGNAL 	clk_1M			:	std_logic;
     SIGNAL  s_data          :  	std_logic_vector(11 downto 0);
     signal	compt_front 	: 	integer range 0 to 11;
-    SIGNAL  State           :   State_Type;    		-- Création signal d'état MEF
+	TYPE State_type IS (etat0, etat1, etat2, etat3, etat4);
+	SIGNAL  State           :   State_Type;    		-- Création signal d'état MEF
+    
 begin
 
 -- **********************************************************
@@ -28,7 +30,7 @@ begin
 --***********************************************************
 --  Machine à état pour piloter l'adc et mémoriser la donnée
 --***********************************************************
-MEF: process(clk, Raz_n)
+MEF: process(clk_1M, Raz_n)
 begin
     if  Raz_n		=	'0' then 
         State           <= etat0;

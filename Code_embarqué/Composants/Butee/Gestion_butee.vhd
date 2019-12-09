@@ -8,7 +8,7 @@ entity Gestion_butee is
         pwm_on, sens, enable	:	in  std_logic;
         angle_barre				:	in  std_logic_vector(11 downto 0);			 
 		  butee_g, butee_d   	:	in  std_logic_vector(11 downto 0);
-        out_pwm, out_sens		: 	out std_logic
+        out_pwm, out_sens, out_fin_g, out_fin_d		: 	out std_logic
     );
 end entity Gestion_butee;
 
@@ -32,4 +32,7 @@ begin
     end process controle_butee;
         out_pwm     <= enable and pwm_on and (((not fin_course_d) and sens) or ((not fin_course_g) and (not sens))) ; 
         out_sens    <= sens;
+		  out_fin_g	  <= fin_course_g;
+		  out_fin_d	  <= fin_course_d;
+		  
 end architecture Arch_butee;
