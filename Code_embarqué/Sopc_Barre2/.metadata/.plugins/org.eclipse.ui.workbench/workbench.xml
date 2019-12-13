@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="200" y="200">
 <fastViewData fastViewLocation="1024"/>
@@ -22,7 +22,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1575878552485" focus="true" label="Workspace - Nios II">
+<page aggregateWorkingSetId="Aggregate for window 1575878552485" focus="true" label="Workspace - Nios II Debug">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -30,43 +30,29 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" partName="hello_world_small.c" path="C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Sopc_Barre2/software/Sopc_boutons/hello_world_small.c" title="hello_world_small.c" tooltip="Sopc_boutons/hello_world_small.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sopc_boutons/hello_world_small.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4747" selectionTopPixel="1543"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" partName="hello_world_small.c" path="C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Sopc_Barre2/software/Barre_franche/hello_world_small.c" title="hello_world_small.c" tooltip="Barre_franche/hello_world_small.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Barre_franche/hello_world_small.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6852" selectionTopPixel="2699"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Sopc_Barre2/software/Sopc_boutons_bsp/system.h" title="system.h" tooltip="Sopc_boutons_bsp/system.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sopc_boutons_bsp/system.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="5716" selectionTopPixel="3060"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Sopc_Barre2/software/Barre_franche_bsp/system.h" title="system.h" tooltip="Barre_franche_bsp/system.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Barre_franche_bsp/system.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="8155" selectionTopPixel="4233"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" partName="math.h" title="math.h" tooltip="C:\altera\11.0sp1\quartus\bin\cygwin\usr\include\math.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\altera\11.0sp1\quartus\bin\cygwin\usr\include\math.h" project="Barre_franche"/>
+<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="1850" selectionTopPixel="1224"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
-</view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
-<viewState/>
-</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
-<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="486"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -84,8 +70,27 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.altera.sbtgui.ui.debugPerspective">
 <perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -263,12 +268,12 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.75" ratioLeft="507" ratioRight="169" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -276,6 +281,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -322,8 +328,8 @@
 <new_wizard_action id="com.altera.sbtgui.ui.newLibrary"/>
 <perspective_action id="com.altera.sbtgui.ui.cPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -344,17 +350,18 @@
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.749763" ratioLeft="791" ratioRight="264" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
-<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -371,9 +378,9 @@
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -384,85 +391,125 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_verin_bsp/system.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" path="/Sopc_verin/Sopc_verin.elf"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_verin/hello_world_small.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_verin_bsp/system.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_Verin/hello_world_small.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_Verin_bsp/system.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_Verin_bsp/system.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_Verin_bsp/system.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_boutons/hello_world_small.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sopc_boutons_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Barre_franche/hello_world_small.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Barre_franche_bsp/system.h"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\altera\11.0sp1\quartus\bin\cygwin\usr\include\math.h" project="Barre_franche"/>
 </editors>
-<item historyLabel="system.h" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="hello_world_small.c" index="0">
+<position info="not_deleted" x="4758" y="0"/>
 </item>
-<item historyLabel="Sopc_verin.elf" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="system.h" index="1">
+<position info="not_deleted" x="5716" y="22"/>
 </item>
-<item historyLabel="system.h" index="0">
+<item historyLabel="hello_world_small.c" index="0">
+<position info="not_deleted" x="3563" y="1984"/>
+</item>
+<item historyLabel="system.h" index="1">
+<position info="not_deleted" x="5716" y="22"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="3622" y="8"/>
+</item>
+<item historyLabel="system.h" index="3">
+<position info="not_deleted" x="8155" y="19"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="3622" y="8"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5282" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="4626" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6854" y="59"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6846" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6953" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6953" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5861" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5861" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5706" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5706" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5481" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5354" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5354" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="3666" y="0"/>
+</item>
+<item historyLabel="math.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="hello_world_small.c" index="2">
-<position info="not_deleted" x="3563" y="1444"/>
+<position info="not_deleted" x="3663" y="6"/>
+</item>
+<item historyLabel="math.h" index="4">
+<position info="not_deleted" x="1850" y="3"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6112" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5381" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5595" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5381" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="5468" y="0"/>
+</item>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6244" y="0"/>
 </item>
 <item historyLabel="system.h" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="8155" y="19"/>
 </item>
-<item historyLabel="hello_world_small.c" index="4">
-<position info="not_deleted" x="3622" y="8"/>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6244" y="0"/>
 </item>
-<item historyLabel="system.h" index="5">
-<position info="not_deleted" x="2553" y="18"/>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="4811" y="35"/>
 </item>
-<item historyLabel="system.h" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6852" y="0"/>
 </item>
-<item historyLabel="hello_world_small.c" index="4">
-<position info="not_deleted" x="4080" y="0"/>
-</item>
-<item historyLabel="system.h" index="5">
-<position info="not_deleted" x="2553" y="18"/>
-</item>
-<item historyLabel="hello_world_small.c" index="4">
-<position info="not_deleted" x="4462" y="0"/>
-</item>
-<item historyLabel="hello_world_small.c" index="4">
-<position info="not_deleted" x="4462" y="0"/>
-</item>
-<item historyLabel="system.h" index="5">
-<position info="not_deleted" x="2553" y="18"/>
-</item>
-<item historyLabel="hello_world_small.c" index="4">
-<position info="not_deleted" x="4590" y="0"/>
-</item>
-<item historyLabel="system.h" index="6">
-<position info="not_deleted" x="2553" y="18"/>
-</item>
-<item historyLabel="hello_world_small.c" index="4">
-<position/>
-</item>
-<item historyLabel="system.h" index="7">
-<position info="not_deleted" x="780" y="0"/>
-</item>
-<item historyLabel="hello_world_small.c" index="4">
-<position info="not_deleted" x="3563" y="1571"/>
-</item>
-<item historyLabel="hello_world_small.c" index="8">
-<position info="not_deleted" x="3622" y="8"/>
-</item>
-<item historyLabel="system.h" index="9">
-<position info="not_deleted" x="5716" y="22"/>
-</item>
-<item historyLabel="hello_world_small.c" index="8">
-<position info="not_deleted" x="3622" y="8"/>
-</item>
-<item historyLabel="hello_world_small.c" index="8">
-<position info="not_deleted" x="4653" y="0"/>
-</item>
-<item active="true" historyLabel="hello_world_small.c" index="8">
-<position info="not_deleted" x="4708" y="25"/>
+<item active="true" historyLabel="hello_world_small.c" index="2">
+<position info="not_deleted" x="6852" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -481,6 +528,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\altera\11.0sp1\quartus\bin\cygwin\usr\include\math.h">
+<persistable path="C:\altera\11.0sp1\quartus\bin\cygwin\usr\include\math.h" project="Barre_franche"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Barre_franche_bsp/system.h">
+<persistable path="/Barre_franche_bsp/system.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" tooltip="Barre_franche/hello_world_small.c">
+<persistable path="/Barre_franche/hello_world_small.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Sopc_boutons_bsp/system.h">
 <persistable path="/Sopc_boutons_bsp/system.h"/>
 </file>
@@ -501,15 +557,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Test_sopc_bsp/system.h">
 <persistable path="/Test_sopc_bsp/system.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" tooltip="Test_sopc/hello_world_small.c">
-<persistable path="/Test_sopc/hello_world_small.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="test_bsp/system.h">
-<persistable path="/test_bsp/system.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" tooltip="test/hello_world_small.c">
-<persistable path="/test/hello_world_small.c"/>
 </file>
 </mruList>
 </workbench>

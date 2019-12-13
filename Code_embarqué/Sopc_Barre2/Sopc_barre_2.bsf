@@ -1,8 +1,8 @@
 (header "symbol" (version "1.1"))
 (symbol
-(rect 0 0 488 368)
+(rect 0 0 488 400)
 (text "Sopc_barre_2" (rect 4 0 99 16)(font "Arial" (font_size 10)))
-(text "inst" (rect 4 352 28 368)(font "Arial"))
+(text "inst" (rect 4 384 28 400)(font "Arial"))
 (port
 (pt 0 32)
 (input)
@@ -58,6 +58,13 @@
 (text "BP_Tribord_to_the_Gestion_boutons_0 " (rect 0 0 192 16)(font "Arial" (font_size 8)))
 (text "BP_Tribord_to_the_Gestion_boutons_0 " (rect 20 249 212 265)(font "Arial" (font_size 8)))
 (line (pt 0 256)(pt 16 256)(line_width 1))
+)
+(port
+(pt 0 368)
+(input)
+(text "in_pwm_compas_to_the_Vhdl_compass_0 " (rect 0 0 209 16)(font "Arial" (font_size 8)))
+(text "in_pwm_compas_to_the_Vhdl_compass_0 " (rect 20 361 229 377)(font "Arial" (font_size 8)))
+(line (pt 0 368)(pt 16 368)(line_width 1))
 )
 (port
 (pt 488 112)
@@ -136,5 +143,6 @@
 (line (pt 16 208)(pt 471 208)(color 0 0 0)(dotted)(line_width 1))
 (line (pt 16 288)(pt 471 288)(color 0 0 0)(dotted)(line_width 1))
 (line (pt 16 320)(pt 471 320)(color 0 0 0)(dotted)(line_width 1))
-(rectangle (rect 16 16 472 352)(line_width 1)))
+(line (pt 16 352)(pt 471 352)(color 0 0 0)(dotted)(line_width 1))
+(rectangle (rect 16 16 472 384)(line_width 1)))
 )

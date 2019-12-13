@@ -108,7 +108,7 @@ applicable agreement for further details.
 	(input)
 	(rect 104 464 272 480)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "BP_babord" (rect 5 0 59 12)(font "Arial" ))
+	(text "BP_babord" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,12 +119,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 48 480 104 496))
 )
 (pin
 	(input)
 	(rect 104 480 272 496)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "BP_stdby" (rect 5 0 54 12)(font "Arial" ))
+	(text "BP_stdby" (rect 5 0 53 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,12 +136,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 48 496 104 512))
 )
 (pin
 	(input)
 	(rect 104 496 272 512)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Bp_tribord" (rect 5 0 55 12)(font "Arial" ))
+	(text "Bp_tribord" (rect 5 0 54 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -151,6 +153,24 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 48 512 104 528))
+)
+(pin
+	(input)
+	(rect 104 608 272 624)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "In_Compass" (rect 5 0 68 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 40 624 96 640))
 )
 (pin
 	(output)
@@ -235,6 +255,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1000 480 1056 496))
 )
 (pin
 	(output)
@@ -251,6 +272,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1000 496 1056 512))
 )
 (pin
 	(output)
@@ -267,6 +289,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1000 512 1056 528))
 )
 (pin
 	(output)
@@ -283,11 +306,28 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1000 528 1056 544))
+)
+(pin
+	(output)
+	(rect 824 584 1000 600)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "pin_name" (rect 90 0 137 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
-	(rect 312 248 800 616)
+	(rect 312 248 800 648)
 	(text "Sopc_barre_2" (rect 4 0 98 16)(font "Arial" (font_size 10)))
-	(text "inst" (rect 4 352 21 364)(font "Arial" ))
+	(text "inst" (rect 4 384 21 396)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -343,6 +383,13 @@ applicable agreement for further details.
 		(text "BP_Tribord_to_the_Gestion_boutons_0 " (rect 0 0 226 14)(font "Arial" (font_size 8)))
 		(text "BP_Tribord_to_the_Gestion_boutons_0 " (rect 20 249 246 263)(font "Arial" (font_size 8)))
 		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "in_pwm_compas_to_the_Vhdl_compass_0 " (rect 0 0 248 14)(font "Arial" (font_size 8)))
+		(text "in_pwm_compas_to_the_Vhdl_compass_0 " (rect 20 361 268 375)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 16 368))
 	)
 	(port
 		(pt 488 112)
@@ -421,7 +468,8 @@ applicable agreement for further details.
 		(line (pt 16 208)(pt 471 208)(color 0 0 0)(dotted))
 		(line (pt 16 288)(pt 471 288)(color 0 0 0)(dotted))
 		(line (pt 16 320)(pt 471 320)(color 0 0 0)(dotted))
-		(rectangle (rect 16 16 472 352))
+		(line (pt 16 352)(pt 471 352)(color 0 0 0)(dotted))
+		(rectangle (rect 16 16 472 384))
 	)
 )
 (connector
@@ -488,4 +536,16 @@ applicable agreement for further details.
 (connector
 	(pt 800 520)
 	(pt 824 520)
+)
+(connector
+	(pt 272 616)
+	(pt 312 616)
+)
+(connector
+	(pt 800 584)
+	(pt 824 584)
+)
+(connector
+	(pt 824 584)
+	(pt 824 592)
 )

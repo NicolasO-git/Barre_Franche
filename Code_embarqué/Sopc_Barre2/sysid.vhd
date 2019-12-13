@@ -41,7 +41,7 @@ architecture europa of sysid is
 begin
 
   --control_slave, which is an e_avalon_slave
-  readdata <= A_WE_StdLogicVector((std_logic'(address) = '1'), std_logic_vector'("01011101111011100010010110101110"), std_logic_vector'("00000000000000000000000000000000"));
+  readdata <= A_WE_StdLogicVector((std_logic'(address) = '1'), std_logic_vector'("01011101111100110101010010111101"), std_logic_vector'("00000000000000000000000000000000"));
 
 end europa;
 

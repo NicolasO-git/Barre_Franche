@@ -18,6 +18,7 @@
       data_in_to_the_AvalonVerin_0 => data_in_to_the_AvalonVerin_0,
       in_freq_anemometre_to_the_AvalonAnemo_0 => in_freq_anemometre_to_the_AvalonAnemo_0,
       in_port_to_the_Bouton => in_port_to_the_Bouton,
+      in_pwm_compas_to_the_Vhdl_compass_0 => in_pwm_compas_to_the_Vhdl_compass_0,
       reset_n => reset_n
     );
 

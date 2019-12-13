@@ -4,9 +4,17 @@
 make all 
 Info: Building ../Sopc_boutons_bsp/
 make --no-print-directory -C ../Sopc_boutons_bsp/
-[BSP build complete]
-Info: Compiling hello_world_small.c to obj/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -I../Sopc_boutons_bsp//HAL/inc -I../Sopc_boutons_bsp/ -I../Sopc_boutons_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/hello_world_small.o hello_world_small.c
-hello_world_small.c: In function 'main':
-hello_world_small.c:116: error: invalid type argument of 'unary *'
-make: *** [obj/hello_world_small.o] Error 1
+Makefile not up to date.
+C:/Users/Etudiant/Documents/ROUTIER_OTAL_FPGA_M2/Barre_Franche/Code_embarqué/Sopc_Barre2/Sopc_barre_2.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../Sopc_boutons_bsp/-recurs-make-lib] Error 2

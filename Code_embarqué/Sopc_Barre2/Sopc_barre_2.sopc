@@ -53,19 +53,19 @@
    element Sopc_barre_2
    {
    }
+   element Vhdl_compass_0
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
    element jtag_uart_0.avalon_jtag_slave
    {
       datum baseAddress
       {
          value = "69696";
-         type = "long";
-      }
-   }
-   element AvalonVerin_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "69632";
          type = "long";
       }
    }
@@ -85,11 +85,27 @@
          type = "long";
       }
    }
+   element AvalonVerin_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "69632";
+         type = "long";
+      }
+   }
    element Gestion_boutons_0.avalon_slave_0
    {
       datum baseAddress
       {
          value = "69728";
+         type = "long";
+      }
+   }
+   element Vhdl_compass_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "69736";
          type = "long";
       }
    }
@@ -134,7 +150,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "11";
          type = "int";
       }
    }
@@ -144,6 +160,14 @@
       {
          value = "2";
          type = "int";
+      }
+   }
+   element Bouton.s1
+   {
+      datum baseAddress
+      {
+         value = "69664";
+         type = "long";
       }
    }
    element onchip_memory2_0.s1
@@ -159,14 +183,6 @@
       datum baseAddress
       {
          value = "69680";
-         type = "long";
-      }
-   }
-   element Bouton.s1
-   {
-      datum baseAddress
-      {
-         value = "69664";
          type = "long";
       }
    }
@@ -190,8 +206,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="Sopc_Barre.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="-13273344215" />
- <parameter name="timeStamp" value="1575888301719" />
+ <parameter name="systemHash" value="-18231226887" />
+ <parameter name="timeStamp" value="1576228028616" />
  <module kind="clock_source" version="11.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -291,7 +307,7 @@
   <parameter name="dcache_numTCDM" value="_0" />
   <parameter name="dcache_lineSize" value="_32" />
   <parameter name="dcache_bursts" value="false" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xD000' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='AvalonVerin_0.avalon_slave_0' start='0x11000' end='0x11020' /><slave name='Bouton.s1' start='0x11020' end='0x11030' /><slave name='Leds.s1' start='0x11030' end='0x11040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11040' end='0x11048' /><slave name='sysid.control_slave' start='0x11048' end='0x11050' /><slave name='Pwm_avalon_0.avalon_slave_0' start='0x11050' end='0x11058' /><slave name='AvalonAnemo_0.avalon_slave_0' start='0x11058' end='0x11060' /><slave name='Gestion_boutons_0.avalon_slave_0' start='0x11060' end='0x11068' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xD000' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='AvalonVerin_0.avalon_slave_0' start='0x11000' end='0x11020' /><slave name='Bouton.s1' start='0x11020' end='0x11030' /><slave name='Leds.s1' start='0x11030' end='0x11040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11040' end='0x11048' /><slave name='sysid.control_slave' start='0x11048' end='0x11050' /><slave name='Pwm_avalon_0.avalon_slave_0' start='0x11050' end='0x11058' /><slave name='AvalonAnemo_0.avalon_slave_0' start='0x11058' end='0x11060' /><slave name='Gestion_boutons_0.avalon_slave_0' start='0x11060' end='0x11068' /><slave name='Vhdl_compass_0.avalon_slave_0' start='0x11068' end='0x11070' /></address-map>]]></parameter>
   <parameter name="dataAddrWidth" value="17" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="cpuReset" value="false" />
@@ -386,7 +402,10 @@
    kind="Gestion_boutons"
    version="1.0"
    enabled="1"
-   name="Gestion_boutons_0" />
+   name="Gestion_boutons_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+ </module>
+ <module kind="Vhdl_compass" version="1.0" enabled="1" name="Vhdl_compass_0" />
  <connection kind="clock" version="11.0" start="clk_0.clk" end="cpu_0.clk" />
  <connection
    kind="avalon"
@@ -515,5 +534,18 @@
    end="Gestion_boutons_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00011060" />
+ </connection>
+ <connection
+   kind="clock"
+   version="11.0"
+   start="clk_0.clk"
+   end="Vhdl_compass_0.clock" />
+ <connection
+   kind="avalon"
+   version="11.0"
+   start="cpu_0.data_master"
+   end="Vhdl_compass_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00011068" />
  </connection>
 </system>

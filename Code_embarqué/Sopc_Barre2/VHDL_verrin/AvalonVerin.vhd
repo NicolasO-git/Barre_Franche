@@ -102,7 +102,8 @@ lecture: process (address, Freq, Duty, Butee_gauche, Butee_droite,angle_barre, f
 			when "100" =>
 			readdata <= X"000000"&"000"&fin_course_g&fin_course_d&Sens&Enable&Raz_n;
 			when "101" =>
-			readdata <= X"00000"&angle_barre;
+			readdata(11 downto 0) <= angle_barre;
+			readdata(31 downto 12) <= (others => '0'); 
 			when others => 
 			readdata <= (others => '0');
 			end case;
