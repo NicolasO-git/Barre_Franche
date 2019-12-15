@@ -72,6 +72,21 @@ La machine à états ci-dessous décrit le comportement du bloc Gestion vérin p
 
   \newpage
 
+  \subsection{Réalisation Asservissement vérin (Compas + Interface)}	
+Après l'implémentation des fonctions simple et complexe le temps nous a permit d'instancier l'asservissement du vérin en y ajoutant l'interface Homme système (boutons, Leds et buzzer) ainsi que la partie compas nécessaires à l'asservissement. Nous avons par manque de temps copié les fonctions déjà présente sur le site du projet mais avons développé nous mêmes les parties centrales pour éviter de copier un projet sans le comprendre. Les machines à états développées dans les fichiers VHDL sont donc développées par nous mêmes. 	
+
+\vspace{1cm}	
+  \begin{figure}[h]	
+    \begin{center}	
+      \includegraphics[width=0.5\textwidth]{images/bp.jpg}	
+      \caption{Boutons poussoir, leds et buzzer}	
+    \end{center}	
+  \end{figure}	
+
+  La partie compas développée nous a permit d'intégrer le composant CMPS03 qui est une boussole I2C (module à droite de la figure 7). Ce module va nous permettre dans l'asservissement de définir un cap à suivre pour le voilier. Ce bloc fonctionnel est complémenté par le bloc interface qui va permettre durant l'asservissement de corriger (+1/+10 degrés ou -1/-10 degrés) et d'afficher le cap que suit le voilier. Le passage du mode manuel vers le mode automatique se fera aussi à l'aide de l'interface implémentée en fin du bureau d'étude (en bas de la figure 7). 	
+
+  \newpage
+
   \subsection{Réalisation interfaces Avalon}
 
 La création d'une interface processeur et matériel programmable est nécessaire au bon fonctionnement du projet. Altera a développé un bus informatique appelé bus "Avalon" destiné à l'implémentation matériel/composants sur FPGA. Il va permettre l'interconnexion entre le processeur NIOS II (réalisé à l'aide de SOPC builder) et les périphériques des différents composants que nous avons créé ultérieurement.\\
