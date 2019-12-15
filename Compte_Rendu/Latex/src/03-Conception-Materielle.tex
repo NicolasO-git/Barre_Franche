@@ -26,8 +26,11 @@ La figure 3 représente la décomposition des composants utilisés pour la réal
 \newpage
 
   Le deuxième composant "Detect\_FM" est en charge de détecter les fronts montants sortant de l'anémomètre pour transformer la fréquence générée en Hertz en une donnée interprétable par le composant "Cpt".\\\newline
+
   Le composant "Cpt" va permettre de récupérer la quantité de fronts montants comptés par le composant "Detect\_FM", toutes les secondes quand le composant sera en mode continue et une seule fois lors du mode mono-coup.\\\newline
+
   Le composant "Reg" permettant de stocker la valeur de la fréquence convertie dans un registre ce qui va permettre de venir traiter ou effectuer des calculs une fois celle-ci acquise (ici dans le MCU qui sera réalisé prochainement).\\\newline
+
   Le composant "MEF" est chargé de gérer le mode de fonctionnement du circuit, ce qui permet à ce bloc fonctionnel de savoir quand il doit être remis à zéro ou savoir quand il est en mode "Continu" ou "Mono-coup".\vspace{1cm}
   \begin{figure}[h]
     \begin{center}
@@ -36,7 +39,7 @@ La figure 3 représente la décomposition des composants utilisés pour la réal
     \end{center}
   \end{figure}
 
-Au projet une partie interface Avalon a été ajoutée permettant l'implémentation et l'interfaçage des fonctions entre la partie NIOS II et la partie matérielle FPGA. 
+Au projet, une partie interface Avalon a été ajoutée permettant l'implémentation et l'interfaçage des fonctions entre la partie NIOS II et la partie matérielle FPGA. 
   \newpage
 
   \subsection{Réalisation fonction complexe - Gestion vérin}
@@ -62,7 +65,7 @@ La machine à états ci-dessous décrit le comportement du bloc Gestion vérin p
 \vspace{1cm}
   \begin{figure}[h]
     \begin{center}
-      \includegraphics[width=\textwidth]{images/MEF_vérin.jpg}
+      \includegraphics[width=\textwidth]{images/MEF_verin.jpg}
       \caption{Machine à états Gestion vérin}
     \end{center}
   \end{figure}
@@ -78,7 +81,7 @@ Pour réaliser cette interface il a fallut respecter le cahier des charges donn�
 La première interface correspond à la fonction Anémomètre.
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{images/avalon_anémo.jpg}
+    \includegraphics[width=0.8\textwidth]{images/avalon_anemo.jpg}
     \caption{Interface Avalon Gestion anémomètre}
   \end{center}
 \end{figure}\\
@@ -87,7 +90,7 @@ La deuxième interface correspond à la fonction Gestion vérin.
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{images/avalon_vérin.jpg}
+    \includegraphics[width=0.8\textwidth]{images/avalon_verin.jpg}
     \caption{Interface Avalon Gestion vérin}
   \end{center}
 \end{figure}
