@@ -7,7 +7,13 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Processors and Peripherals/Co-Processors,Library/Processors and Peripherals,Library/Basic Functions/Simulation; Debug and Verification,Library/Processors and Peripherals/Embedded Processors,Library/Basic Functions,Project,Library/Processors and Peripherals/Co-Processors/Nios II Custom Instructions,Library,Library/Basic Functions/Simulation; Debug and Verification/Simulation" />
+ <library expandedCategories="Project,Library" />
  <window width="1100" height="800" x="295" y="74" />
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="269" />
+   <clocksource preferredWidth="269" />
+   <frequency preferredWidth="250" />
+  </columns>
+ </clocktable>
 </preferences>
