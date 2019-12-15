@@ -1,5 +1,5 @@
 \section{Conception Matérielle}
-Pour mettre en oeuvre les différentes parties du projet combinatoires et séquentielles, nous avons du passer par des étapes d'analyses comportementales de chaque blocs à réaliser pour ainsi créer des composants simples pouvant être utiliser à la composition de fonctions plus complexes plus tard. L'implémentation de chaque composants a été réalisée grâce au langage VHDL sur le logiciel de développement Quartus.
+Pour mettre en oeuvre les différentes parties du projet combinatoires et séquentielles, nous avons du passer par des étapes d'analyses comportementales de chaque blocs à réaliser pour ainsi créer des composants simples pouvant être utilisés à la composition de fonctions plus complexes plus tard. L'implémentation de chaque composants a été réalisée grâce au langage VHDL sur le logiciel de développement Quartus.
 
 Ainsi nous avons réalisé différentes "boîtes" de composants simples pour réaliser des fonctions entières, et plus complexes, contenant les blocs simples.
 
@@ -28,7 +28,7 @@ La figure 3 représente la décomposition des composants utilisés pour la réal
   Le deuxième composant "Detect\_FM" est en charge de détecter les fronts montants sortant de l'anémomètre pour transformer la fréquence générée en Hertz en une donnée interprétable par le composant "Cpt".\\\newline
   Le composant "Cpt" va permettre de récupérer la quantité de fronts montants comptés par le composant "Detect\_FM", toutes les secondes quand le composant sera en mode continue et une seule fois lors du mode mono-coup.\\\newline
   Le composant "Reg" permettant de stocker la valeur de la fréquence convertie dans un registre ce qui va permettre de venir traiter ou effectuer des calculs une fois celle-ci acquise (ici dans le MCU qui sera réalisé prochainement).\\\newline
-  Le composant "MEF" est chargé de gérer le mode de fonctionnement du circuit, ce qui permet à ce bloc fonctionnel de savoir quand il doit être remise à zéro ou savoir quand il est en mode "Continu" ou "Mono-coup".\vspace{1cm}
+  Le composant "MEF" est chargé de gérer le mode de fonctionnement du circuit, ce qui permet à ce bloc fonctionnel de savoir quand il doit être remis à zéro ou savoir quand il est en mode "Continu" ou "Mono-coup".\vspace{1cm}
   \begin{figure}[h]
     \begin{center}
       \includegraphics[width=\textwidth]{images/MEF_anemo.jpg}
@@ -44,7 +44,7 @@ Au projet une partie interface Avalon a été ajoutée permettant l'implémentat
   La fonction réalisant le mouvement de la barre franche est réalisé avec le circuit vérin. Ce circuit est composé de 3 fonctions principales qui vont permettre le pilotage du vérin qui contrôle la barre franche du voilier :\vspace{0.5cm}
 \begin{enumerate}
     \item Une gestion d'un signal PWM effectué par le process "PWM" qui va permettre de faire sortir ou rentrer le vérin en fonction d'une fréquence et le rapport cyclique. 
-    \item Un contrôle des butées réalisé par le process "Gestion\_Butée" qui sous certaines conditions fixées dans la partie logicielle du projet fera continue l'avance ou le recul du vérin jusqu'à celles-ci.
+    \item Un contrôle des butées réalisé par le process "Gestion\_Butée" qui sous certaines conditions fixées dans la partie logicielle du projet fera l'avance ou le recul du vérin jusqu'à celles-ci.
     \item Une machine à états pour la gestion du convertisseur MCP3201 12 bits rendant possible le déplacement du vérin dans un sens puis dans un autre.
     \item Une partie interface Avalon est ajouté au projet pour créer le lien entre la partie logicielle et la partie matérielle du FPGA/NIOS II.
 \end{enumerate} 
