@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(EP4CE22F17) MfrSpec(OpMask(0) FullPath("C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/Sopc_Barre_Franche/Sopc_Barre.sof"));
+	P ActionCode(Cfg)
+		Device PartName(EP4CE22F17) Path("C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/Sopc_Barre_Franche/") File("Sopc_Barre.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
