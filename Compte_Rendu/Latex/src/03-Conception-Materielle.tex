@@ -8,11 +8,11 @@ La fonction réalisant l'acquisition de la vitesse du vent (0 à 250 Km/h) se fa
 \vspace{0.5cm}\\
 Le composant doit fonctionner en deux modes :
 \begin{enumerate}
-    \item Mode continu, dans ce mode le système actualise l'acquisition toutes les secondes de la vitesse du vent.  
-    \item Mode mono-coup, dans ce mode le système effectue qu'une seule acquisition lorsque "Start/stop" est activé. Une fois "data\_valide" envoyé le système remet les entrées "start/stop" et "data\_valide" à zéro après une acquisition.
+    \item Mode continu, dans ce mode le système actualise l'acquisition toutes les secondes de la vitesse du vent. Pour cela l'entrée "Continu" doit être à 1. 
+    \item Mode mono-coup, dans ce mode le système effectue qu'une seule acquisition lorsque "Start/Stop" est activé. Une fois "data\_valide" envoyé le système remet les entrées "Start/Stop" et "data\_valide" à zéro après une acquisition et attend la prochaine entrée "Start/Stop".
 \end{enumerate}
 \vspace{0.5cm}
-La figure 3 représente la décomposition des composants utilisés pour la réalisation du bloc "Captage direction vent". Composé d'un diviseur de fréquence (pour obtenir une fréquence d'un Hertz, acquisition toutes les sécondes), d'un détecteur de fronts montants (permettant d'indiquer le nombre de fronts montants correspondant à la fréquence mesurée), d'une machine à état (pour décrire séquentiellement les modes continu/mono-coup), un compteur (pour l'acquisition du nombre de fronts montants toutes les secondes) et une Bascule D (permettant la mémorisation de la valeur et l'acquisition avant obtention de la nouvelle valeur).
+La figure 3 représente la décomposition des composants utilisés pour la réalisation du bloc "Captage direction vent". 
 
 \begin{figure}[h]
     \begin{center}
@@ -21,6 +21,34 @@ La figure 3 représente la décomposition des composants utilisés pour la réal
     \end{center}
   \end{figure}
 
+  Le composant "Div" fournit une horloge de 1 Hz à partir de l'horloge 50 MHz donnée par la clock du FPGA. L'horloge de 1 Hz sera utilisée pour l'acquisition de la fréquence de l'anémomètre toutes les secondes.
+
+\newpage
+
+  Le deuxième composant "Detect\_FM" est en charge de détecter les fronts montants sortant de l'anémomètre pour transformer la fréquence générée en Hertz en une donnée interprétable par le composant "Cpt".\\\newline
+  Le composant "Cpt" va permettre de récupérer la quantité de fronts montants comptés par le composant "Detect\_FM", toutes les secondes quand le composant sera en mode continue et une seule fois lors du mode mono-coup.\\\newline
+  Le composant "Reg" permettant de stocker la valeur de la fréquence convertie dans un registre ce qui va permettre de venir traiter ou effectuer des calculs une fois celle-ci acquise (ici dans le MCU qui sera réalisé prochainement).\\\newline
+  Le composant "MEF" est chargé de gérer le mode de fonctionnement du circuit (METTRE MEF)
+
+
   \newpage
 
   \subsection{Réalisation fonction complexe - Gestion vérin}
+
+  Cette circuit est composé de 3 fonctions principales qui vont permettre le pilotage du vérin qui contrôle la barre franche du voilier :
+\begin{enumerate}
+    \item Une gestion d'un signal PWM effectué par le process "PWM". 
+    \item Un contrôle des butées réalisé par le process "Gestion\_Butée".
+    \item Une machine à états pour la gestion du convertisseur MCP3201.
+\end{enumerate} 
+
+  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[width=\textwidth]{images/verin.png}
+      \caption{Diagramme fonctionnel du circuit "Actionnement Barre"}
+    \end{center}
+  \end{figure}
+
+  Le premier composant "PWM".\\\newline
+  Le composant "Gestion\_Butée".\\\newline
+  Le composant "MEF" est chargé de gérer le mode de fonctionnement du circuit (METTRE MEF)

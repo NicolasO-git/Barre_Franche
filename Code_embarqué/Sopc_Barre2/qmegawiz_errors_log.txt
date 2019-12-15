@@ -1,0 +1,16 @@
+
+
+C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/Sopc_Barre2/Sopc_barre_2.vhd
+
+Dec 14 07PM:52:31>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/Sopc_Barre2/Sopc_barre_2.vhd
+
+Dec 14 07PM:52:32>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/Nico/Desktop/Barre_Franche/Code_embarqué/Sopc_Barre2/Sopc_barre_2.vhd
+
+Dec 14 08PM:00:32>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
