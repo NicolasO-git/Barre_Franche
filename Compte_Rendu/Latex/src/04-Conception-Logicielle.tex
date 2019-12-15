@@ -12,10 +12,12 @@ Dans le système réalisé pour le projet nous avons généré, à l'aide de "SO
   \newpage 
 
   Une fois les différents composants ajoutés avec leurs différents fichiers VHDL, une boite globale du projet est créée par "SOPC Builder".
-
+\vspace{0.5cm}
   \begin{figure}[h]
     \begin{center}
       \includegraphics[width=\textwidth]{images/sopc_bloc.png}
       \caption{SOPC et ses différents ports GPIO}
     \end{center}
   \end{figure}
+
+  Il est nécessaire, une fois la fonction le Sopc réalisée, de gérer le l'affectation des pins du FPGA avec celle générées dans notre fichier sopc. Il est important de respecter les pins déjà attribuées dans le cahier des charges car certaines sont déjà câblées sur la maquette de développement.

@@ -1,0 +1,5 @@
+
+**** Clean-only build of configuration Nios II for project Barre_franche_valide ****
+
+make clean 
+[Barre_franche_valide clean complete]
